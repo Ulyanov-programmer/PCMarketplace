@@ -1,0 +1,50 @@
+<header class='header'>
+  <div class='header__body _container'>
+
+    <a href='index.html' class='logo' title='На главную страницу'>
+      <img src='img/logo.svg' alt='logo' width=150 height=61>
+    </a>
+
+    <nav class='navmenu'>
+      <ul class='navmenu__body'>
+        <li class='laptop-hide-button'>
+          <a class='active' target='_blank' rel='noopener' href='index.html'>
+            Меню
+          </a>
+        </li>
+        <li class='laptop-hide-button'>
+          <a class='' target='_blank' rel='noopener' href='#'>
+            Аксессуары
+          </a>
+        </li>
+        <li class='laptop-hide-button'>
+          <a class='' target='_blank' rel='noopener' href='#'>
+            Конфигуратор
+          </a>
+        </li>
+        <li class='laptop-hide-button'>
+          <a class='' target='_blank' rel='noopener' href='#'>
+            Поддержка
+          </a>
+        </li>
+        <li class='tablet-hide-button'>
+          <a id='favs-button' class='button-with-icon' target='_blank' rel='noopener' href='#'>
+            Избранное
+          </a>
+        </li>
+        <li class='tablet-hide-button'>
+          <button data-open-modal-id='cart' id='cart-button' class='button-with-icon' type='button'>
+            Корзина
+          </button>
+        </li>
+        <li>
+          <div class='current-money _element-with-accent-point'>
+            1500 ₽
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <%- include('components/_burgerMenu.htm') %>
+  </div>
+</header>

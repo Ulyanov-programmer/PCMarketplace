@@ -1,0 +1,120 @@
+@import '../_environment';
+
+$burgerMenuShowWidth = 1300px;
+$mainNavMenuHideWidth = 768px;
+
+:root {
+  // It is installed automatically by the script for working with the burger menu.
+  --burgerMarginTop .1px;
+}
+
+.burger-menu {
+  z-index 4 !important;
+  pseudoInset(fixed, 0, 0);
+  transform translate3d(0, -100vh, 0);
+  block-size(100vw, calc(100vh - var(--burgerMarginTop)));
+  margin-top var(--burgerMarginTop);
+  background rgba(0, 0, 0, .8);
+  overflow auto;
+  transition all .3s ease;
+
+  @media (min-width $burgerMenuShowWidth) {
+    display none;
+  }
+
+  &.active {
+    transform translate3d(0, 0, 0);
+  }
+
+  ul {
+    >* {
+      display flex;
+      justify-content center;
+
+      * {
+        position relative;
+        color var(--text-c);
+        padding 25px 0;
+        overflow hidden;
+
+        &:hover, &:focus-visible {
+          &:before {
+            transform translate3d(0, 0, 0);
+          }
+
+          &:after {
+            transform translate3d(0, 0, 0);
+          }
+        }
+
+        &:before, &:after {
+          position absolute;
+          bottom 0;
+          left 0;
+          width 50%;
+          height 2px;
+          background white !important;
+          transition transform .1s ease;
+          content '';
+        }
+
+        &:before {
+          transform translate3d(-100%, 0, 0);
+        }
+
+        &:after {
+          left 50%;
+          transform translate3d(100%, 0, 0);
+        }
+      }
+    }
+  }
+}
+
+.burger-btn {
+  z-index 5;
+  display block;
+  transition all .3s ease;
+
+  &__svg {
+    * {
+      transition all .3s ease;
+    }
+  }
+
+  &:hover, &:focus-visible {
+    transform rotate(10deg);
+  }
+
+  &.active {
+    transform rotate(90deg);
+
+    .path-line-bg {
+    }
+
+    .path-top {
+    }
+
+    .path-center {
+    }
+
+    .path-top {
+    }
+  }
+
+  @media (min-width 1300px) {
+    display none;
+  }
+}
+
+.laptop-hide-button {
+  @media (max-width $burgerMenuShowWidth) {
+    display none;
+  }
+}
+
+.tablet-hide-button {
+  @media (max-width $mainNavMenuHideWidth) {
+    display none;
+  }
+}

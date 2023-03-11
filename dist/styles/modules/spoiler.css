@@ -1,0 +1,68 @@
+.spoiler {
+  position: relative;
+  transition: all 0.3s ease;
+}
+.spoiler__btn {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  cursor: pointer;
+}
+.shop-menu__spoiler-button {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--accent-c);
+  font-weight: 700;
+  padding-bottom: 7px;
+  font-size: max(15px, min(1.56vw, 30px));
+  text-align: left;
+  line-height: 1;
+}
+.shop-menu__spoiler-button rect {
+  transition: fill 0.2s ease;
+}
+.shop-menu__spoiler-button path {
+  transition: all 0.3s ease;
+  transform-origin: center;
+}
+.shop-menu__spoiler-button svg {
+  min-width: 23px;
+}
+.shop-menu__spoiler-button.active path {
+  transform: scaleY(-1);
+}
+.shop-menu__spoiler-button.active rect,
+.shop-menu__spoiler-button:hover rect,
+.shop-menu__spoiler-button.focus-visible rect {
+  fill: var(--accent-c);
+}
+.shop-menu__spoiler-button.active rect,
+.shop-menu__spoiler-button:hover rect,
+.shop-menu__spoiler-button:focus-visible rect {
+  fill: var(--accent-c);
+}
+.shop-menu__spoiler-button.active path,
+.shop-menu__spoiler-button:hover path,
+.shop-menu__spoiler-button.focus-visible path {
+  fill: #000;
+}
+.shop-menu__spoiler-button.active path,
+.shop-menu__spoiler-button:hover path,
+.shop-menu__spoiler-button:focus-visible path {
+  fill: #000;
+}
+.shop-menu__spoiler-content {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  gap: 10px;
+}
+.shop-menu__spoiler-content >* {
+  font-family: montserrat;
+  font-weight: 200;
+  font-size: max(16px, min(1.3vw, 25px));
+  text-align: left;
+}

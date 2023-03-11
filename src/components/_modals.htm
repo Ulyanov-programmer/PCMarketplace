@@ -1,0 +1,151 @@
+<aside id='cart' class='modal-window modal-window_block'>
+  <div class='modal-window__body'>
+    <button title='Закрыть окно' class='cart__closer modal-window__closer modal-window__closer-btn modal-window__closer-animation' type='button'>
+      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M29 29L1 1M29 1L1 29" stroke="#646464" stroke-width="2" stroke-linecap="round" />
+      </svg>
+    </button>
+
+    <section class='cart _container modal-window__inner'>
+      <div class="cart__body">
+        <h4 class="cart__title modal-window__heading">Корзина</h4>
+
+        <div class="cart__items">
+          <div class="cart__item cart-item">
+            <div class="cart-item__preview _contain-img">
+              <img src='img/cart-pc.png' loading='lazy' alt='cart-item-name'>
+            </div>
+
+            <p class="cart-item__name">Gaming pc 3000</p>
+            <p class="cart-item__price">152 000 ₽</p>
+
+            <div class="cart-item__counter counter">
+              <button class='counter__counter-decrase' title="уменьшить количество" type='button'>-</button>
+              <input id="countOfProduct" class='counter__counter-input' type='number' step='1' min='1' name='countOfProduct' value='1'>
+              <button class='counter__counter-incrase' title="уменьшить количество" type='button'>+</button>
+            </div>
+
+            <button title='Убрать элемент' class='cart-item__closer modal-window__closer-animation' type='button'>
+              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M29 29L1 1M29 1L1 29" stroke="#646464" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </button>
+          </div>
+          <div class="cart__item cart-item">
+            <div class="cart-item__preview _contain-img">
+              <img src='img/cart-pc.png' loading='lazy' alt='cart-item-name'>
+            </div>
+
+            <p class="cart-item__name">Gaming pc 3000</p>
+            <p class="cart-item__price">152 000 ₽</p>
+
+            <div class="cart-item__counter counter">
+              <button class='counter__counter-decrase' title="Уменьшить количество" type='button'>-</button>
+              <input class='counter__counter-input' type='number' step='1' min='1' name='countOfProduct' value='1'>
+              <button class='counter__counter-incrase' title="Увеличить количество" type='button'>+</button>
+            </div>
+
+            <button title='Убрать элемент' class='cart-item__closer modal-window__closer-animation' type='button'>
+              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M29 29L1 1M29 1L1 29" stroke="#646464" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <p class='cart__general-price'>Общая стоимость: <span>100500 ₽</span></p>
+
+        <footer class='cart__footer'>
+          <button type='button' class='cart__by-installments-btn'>В рассрочку</button>
+          <button data-open-modal-id='order' type='button' class='cart__make-order-btn modal-button'>Заказать</button>
+        </footer>
+      </div>
+    </section>
+
+    <svg id='cart-top-left-decor' class='page-decor' width="378" height="362" viewBox="0 0 378 362" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g filter="url(#filter0_f_116_17)">
+        <path d="M192.619 -112.028C198.546 -116.174 206.779 -112.85 208.166 -105.75L277.643 250.052C279.164 257.84 271.443 264.212 264.084 261.241L-102.446 113.241C-109.804 110.27 -110.936 100.323 -104.434 95.7742L192.619 -112.028Z" fill="#7ED23C" />
+      </g>
+      <defs>
+        <filter id="filter0_f_116_17" x="-208.703" y="-213.842" width="586.54" height="575.827" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+          <feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_116_17" />
+        </filter>
+      </defs>
+    </svg>
+    <svg id='cart-bottom-right-decor' class='page-decor' width="318" height="333" viewBox="0 0 318 333" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g filter="url(#filter0_f_116_18)">
+        <path d="M101.425 114.755C98.5647 108.111 103.488 100.722 110.721 100.803L473.22 104.842C481.155 104.93 485.831 113.782 481.431 120.386L262.25 449.336C257.85 455.94 247.88 455.034 244.743 447.745L101.425 114.755Z" fill="#7ED23C" />
+      </g>
+      <defs>
+        <filter id="filter0_f_116_18" x="0.598694" y="0.802246" width="582.526" height="552.99" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+          <feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_116_18" />
+        </filter>
+      </defs>
+    </svg>
+  </div>
+</aside>
+
+<aside id='order' class='modal-window'>
+  <button title='Закрыть окно' class='order__closer modal-window__closer modal-window__closer-btn modal-window__closer-animation' type='button'>
+    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M29 29L1 1M29 1L1 29" stroke="#646464" stroke-width="2" stroke-linecap="round" />
+    </svg>
+  </button>
+
+  <section class='order _container modal-window__inner'>
+    <h4 class="order__title cart__title modal-window__heading">Оформить заказ</h4>
+
+    <form id='order-form' class='order-form' action='#'>
+      <fieldset class='order-form__body'>
+        <input class='order-form__name' type='text' name='user-name' placeholder='Ваше полное имя' required>
+        <input class='order-form__tel' type='tel' name='user-phone' placeholder='Номер телефона' required>
+        <input class='order-form__email' type='email' name='user-email' placeholder='E-main' required>
+        <textarea class='order-form__textarea' name='user-comments' id='textarea' placeholder='Комментарии к заказу' style='resize: none;'></textarea>
+
+        <input class='_element-with-toggle-point _element-with-toggle-point_reverce' type='checkbox' id='delivery' name='delivery' />
+        <label class='order-form__delivery' for='delivery'>Доставка</label>
+
+
+        <footer class='order-form__footer'>
+          <input class='_element-with-toggle-point' type='checkbox' id='personal-data' name='user-personal-data' />
+          <label class='order-form__personal-data' for='personal-data'>Я согласен на обработку персональных данных</label>
+
+          <button class='order-form__submit modal-button' type='submit'>Оплатить</button>
+        </footer>
+      </fieldset>
+
+      <div id='errorsContainer' class='order-form__errors'>
+      </div>
+    </form>
+  </section>
+
+  <svg id='order-right-decor' class='page-decor' width="362" height="554" viewBox="0 0 362 554" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g filter="url(#filter0_f_116_19)">
+      <path d="M101.425 114.755C98.5647 108.111 103.488 100.722 110.721 100.803L473.22 104.842C481.155 104.93 485.831 113.782 481.431 120.386L262.25 449.336C257.85 455.94 247.88 455.034 244.743 447.745L101.425 114.755Z" fill="#7ED23C" />
+    </g>
+    <defs>
+      <filter id="filter0_f_116_19" x="0.598694" y="0.802002" width="582.527" height="552.99" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+        <feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_116_19" />
+      </filter>
+    </defs>
+  </svg>
+</aside>
+
+<aside id='thanks' class='modal-window'>
+  <button title='Закрыть окно' class='thanks__closer modal-window__closer modal-window__closer-btn modal-window__closer-animation' type='button'>
+    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M29 29L1 1M29 1L1 29" stroke="#646464" stroke-width="2" stroke-linecap="round" />
+    </svg>
+  </button>
+
+  <div class='thanks _container modal-window__inner'>
+    <p class="thanks__text">Спасибо за заказ!</p>
+    <button class='thanks__close modal-button modal-window__closer' type='button'>На главную!</button>
+  </div>
+</aside>

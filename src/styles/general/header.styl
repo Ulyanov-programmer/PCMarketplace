@@ -1,0 +1,105 @@
+@import '../_environment'
+
+.header {
+  position relative
+  padding 15px 0
+
+  &__body {
+    flex-set row nowrap
+    justify-content center
+    align-items center
+    gap clamp(30px, 10vw, 120px)
+
+    @media (max-width 768px) {
+      justify-content space-between
+    }
+  }
+}
+
+.navmenu {
+  &__body {
+    flex-set row nowrap
+    justify-content center
+    align-items center
+    gap 15px
+
+    li {
+      a, button {
+        flex-set column-reverse nowrap
+        padding 8px
+        color inherit
+        transition all .2s ease 0s
+      }
+
+      a, button {
+        border-radius 7px
+        border .25em solid #00000000
+
+        &:before {
+          background #000
+          opacity 0
+          height 1.4px
+          width 100%
+          transition opacity .2s ease
+          content ''
+        }
+
+        &.active, &:hover, &:focus {
+          color #000
+          background var(--accent-c)
+          border-color #000
+
+          &:before {
+            opacity .33
+          }
+        }
+      }
+
+      .button-with-icon {
+        flex-set row nowrap
+      }
+    }
+  }
+}
+
+.logo {
+  z-index 10
+}
+
+.current-money {
+  display flex
+  justify-content center
+  align-items center
+  gap 5px
+  white-space nowrap
+}
+
+#cart-button, #favs-button {
+  align-items center
+
+  &:after {
+    min-width 1.5em
+    min-height 1.5em
+    margin-left 3px
+    transition all .2s ease
+    content ''
+  }
+
+  &.active, &:hover, &:focus {
+    &:after {
+      filter brightness(.1)
+    }
+  }
+}
+
+#favs-button {
+  &:after {
+    bg-img-multi-type '../../img/icons/favs.svg', no-repeat center / contain
+  }
+}
+
+#cart-button {
+  &:after {
+    bg-img-multi-type '../../img/icons/cart.svg', no-repeat center / contain
+  }
+}

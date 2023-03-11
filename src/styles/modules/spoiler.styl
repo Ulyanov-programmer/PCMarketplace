@@ -1,0 +1,81 @@
+@import '../_environment';
+
+.spoiler {
+  position relative;
+  transition all .3s ease;
+
+  &__btn {
+    flex-set row nowrap;
+    width 100%;
+    cursor pointer;
+  }
+
+  &__content {
+    &.active {
+    }
+  }
+}
+
+.shop-menu__spoiler {
+  &-wrapper {
+  }
+
+  &-button {
+    flex-set row nowrap;
+    gap 10px;
+    align-items center;
+    justify-content space-between;
+    color var(--accent-c);
+    font-weight 700;
+    padding-bottom 7px;
+    font-size clamp(15px, pxToVw(30), 30px);
+    text-align left;
+    line-height 1;
+
+    rect {
+      transition fill .2s ease;
+    }
+
+    path {
+      transition all .3s ease;
+      transform-origin center;
+    }
+
+    svg {
+      min-width 23px;
+    }
+
+    &.active {
+      path {
+        transform scaleY(-1);
+      }
+    }
+
+    &.active, &:hover, &:focus-visible {
+      rect {
+        fill var(--accent-c);
+      }
+
+      path {
+        fill black;
+      }
+    }
+  }
+
+  &-content {
+    flex-set column nowrap;
+    align-items flex-start;
+    gap 10px;
+
+    >* {
+      font-family montserrat;
+      font-weight 200;
+      font-size clamp(
+        16px,
+        pxToVw(23) + .1rem,
+        25px
+      );
+      text-align left;
+    }
+  }
+}

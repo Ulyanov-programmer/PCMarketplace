@@ -1,0 +1,57 @@
+@import '../_environment'
+
+.footer {
+  background var(--accent-c)
+  color #000
+
+  &__body {
+    flex-set row wrap
+    justify-content space-between
+    padding 35px 0
+    gap 20px
+
+    @media (max-width 1440px) {
+      justify-content center
+    }
+  }
+
+  &__logo {
+    block-size 420px 171px
+  }
+}
+
+.contacts {
+  flex-set row nowrap
+  justify-content space-between
+  align-items center
+  gap clamp(30px, 10vw, 125px)
+
+  @media (max-width 768px) {
+    flex-set row wrap
+    justify-content center
+  }
+
+  &__block {
+    flex-set column nowrap
+    gap 20px
+    text-align center
+  }
+
+  &__title {
+    font-size 20px
+  }
+
+  &__mail, &__tel {
+    color inherit
+
+    &:hover, &:focus {
+      text-decoration underline
+    }
+  }
+
+  &__mail {
+  }
+
+  &__tel {
+  }
+}

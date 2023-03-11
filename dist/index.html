@@ -1,0 +1,1259 @@
+<!DOCTYPE html>
+<html lang=ru>
+
+<head>
+  <meta charset='UTF-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <!-- maximum-scale=1.0, user-scalable=0 does not allow content to be scaled on Android. -->
+  <!-- Disables forced link for phone number on iOS -->
+  <meta name='format-detection' content='telephone=no'>
+
+  <meta name='description' content='description'>
+  <meta name='theme-color' content='#000000'>
+  <link rel='icon' href='./img/favicon.svg'>
+  <link rel='mask-icon' href='./img/favicon.svg' color='#000000'>
+  <!-- <link rel='apple-touch-icon' href='apple-touch-icon.png'> -->
+  <!-- <link rel='manifest' href='manifest.json'> -->
+
+  
+
+  
+  <link rel='preload' href='fonts/montserrat-v25-latin_cyrillic-regular.woff2' as='font' type='font/woff2' crossorigin>
+  
+
+  <!-- SEO
+	<meta name='keywords' content='keyword1,'>
+	<meta name='robots' content='none,noindex,nofollow,noimageindex,noarchive,nosnippet'>
+	<meta name='Author' content='Author'>
+	<meta name='Copyright' content='Copyright'>
+	<meta name='Address' content='Address'> 
+	<! - Redirect (reload) the page. Delay in seconds; url=Site / page address ->
+	<meta http-equiv='refresh' content='seconds; url = URL'>
+
+	Facebook
+	<! - site localization, for the Russian-language site ru_RU ->
+	<meta property='og:locale' content='ru_RU'>
+	<! - content type, default is article ->
+	<meta property='og:type' content='article'>
+	<! - the title of the page that will be displayed in the post of the social network ->
+	<meta property='og:title' content='META tags'>
+	<! - page description ->
+	<meta property='og:description' content='Description of the page about META tags'>
+	<! - link to the image that will be published in the post ->
+	<meta property='og:image' content='path'>
+	<! - link to the current page ->
+	<meta property='og: url' content='path'>
+	<! - site name ->
+	<meta property='og:site_name' content='Freelancer for life'>
+
+	Twitter
+	<! - Map type, default is summary ->
+	<meta name='twitter: card' content='summary'>
+	<! - Author name / login ->
+	<meta name='twitter: site' content='Ivan'>
+	<! - Page title ->
+	<meta name='twitter: title' content='META tags'>
+	<! - Page description ->
+	<meta name='twitter: description' content='about META tags'>
+	<! - Link to image ->
+	<meta name='twitter: image' content='path'>
+	-->
+
+  <title>PCMarketplace</title>
+
+  <!-- /-/ General stylesheets -->
+  <link rel='stylesheet' href='styles/general/nullStyle.css?_v=20230311103930'>
+  <link rel='stylesheet' href='styles/general/fonts.css?_v=20230311103930'>
+  <link rel='stylesheet' href='styles/general/header.css?_v=20230311103930'>
+  <link rel='stylesheet' href='styles/general/footer.css?_v=20230311103930'>
+  <link rel='stylesheet' href='styles/general/general.css?_v=20230311103930'>
+
+  <!-- /-/ General scripts -->
+  
+  <!-- JustValidate -->
+  <script type='module' src='scripts/justValidate.js?_v=20230311103930'></script>
+  
+
+  
+  <!-- Swiper -->
+  <link rel='stylesheet' href='../libs/swiper-bundle.min.css?_v=20230311103930'>
+  <script type='module' src='scripts/sliders.js?_v=20230311103930'></script>
+  
+
+  
+
+  
+
+  
+  <!-- BurgerMenu -->
+  <script type='module' src='scripts/burgerMenu.js?_v=20230311103930'></script>
+  <link rel='stylesheet' href='styles/modules/burgerMenu.css?_v=20230311103930'>
+  
+
+  
+  <!-- Form styles -->
+  <link rel='stylesheet' href='styles/modules/form.css?_v=20230311103930'>
+  
+
+  
+
+  
+  <!-- Spoiler -->
+  <script type='module' src='scripts/spoiler.js?_v=20230311103930'></script>
+  <link rel='stylesheet' href='styles/modules/spoiler.css?_v=20230311103930'>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <!-- Modal window -->
+  <script type='module' src='scripts/modalWindow.js?_v=20230311103930'></script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  <!-- /-/ Other stylesheets and scripts for this page -->
+  
+  <link rel='stylesheet' href='styles/index.css?_v=20230311103930'>
+  
+
+  
+  <script defer src='./scripts/generalScripts.js?_v=20230311103930'></script>
+  
+</head>
+
+<body>
+  <svg id='body-top-left-decor' class='page-decor' width="231" height="285" viewBox="0 0 231 285" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g filter="url(#filter0_f_116_20)">
+      <path d="M119.021 -182.71C126.197 -183.622 131.937 -176.848 129.86 -169.919L25.7696 177.338C23.4911 184.939 13.6914 186.985 8.56132 180.931L-246.98 -120.643C-252.11 -126.698 -248.483 -136.028 -240.611 -137.028L119.021 -182.71Z" fill="#7ED23C" />
+    </g>
+    <defs>
+      <filter id="filter0_f_116_20" x="-349.362" y="-282.793" width="579.653" height="567.264" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+        <feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_116_20" />
+      </filter>
+    </defs>
+  </svg>
+
+  <header class='header'>
+  <div class='header__body _container'>
+
+    <a href='index.html' class='logo' title='На главную страницу'>
+      <img src='img/logo.svg' alt='logo' width=150 height=61>
+    </a>
+
+    <nav class='navmenu'>
+      <ul class='navmenu__body'>
+        <li class='laptop-hide-button'>
+          <a class='active' target='_blank' rel='noopener' href='index.html'>
+            Меню
+          </a>
+        </li>
+        <li class='laptop-hide-button'>
+          <a class='' target='_blank' rel='noopener' href='#'>
+            Аксессуары
+          </a>
+        </li>
+        <li class='laptop-hide-button'>
+          <a class='' target='_blank' rel='noopener' href='#'>
+            Конфигуратор
+          </a>
+        </li>
+        <li class='laptop-hide-button'>
+          <a class='' target='_blank' rel='noopener' href='#'>
+            Поддержка
+          </a>
+        </li>
+        <li class='tablet-hide-button'>
+          <a id='favs-button' class='button-with-icon' target='_blank' rel='noopener' href='#'>
+            Избранное
+          </a>
+        </li>
+        <li class='tablet-hide-button'>
+          <button data-open-modal-id='cart' id='cart-button' class='button-with-icon' type='button'>
+            Корзина
+          </button>
+        </li>
+        <li>
+          <div class='current-money _element-with-accent-point'>
+            1500 ₽
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <button type='button' id='burgerButton' class='header__burger burger-btn' aria-label='burger-menu show button'>
+  <svg width="31" height="20" viewBox="0 0 31 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path class='path-line-bg' d="M1 1.8999H29.8M1 9.9999H29.8M1 18.0999H29.8" stroke="#7ED23C" stroke-width="3" />
+    <path class='path-top' d="M29.8 2.8H1V1H29.8V2.8Z" stroke="black" />
+    <path class='path-center' d="M1 10.9001V9.1001H29.8V10.9001H1Z" stroke="black" />
+    <path class='path-bottom' d="M29.6586 17.2002H1V19.0002H29.6586V17.2002Z" stroke="black" />
+  </svg>
+</button>
+
+<nav class='burger-menu'>
+  <ul>
+    <li>
+      <a class='active' target='_blank' rel='noopener' href='index.html'>
+        Меню
+      </a>
+    </li>
+    <li>
+      <a class='' target='_blank' rel='noopener' href='#'>
+        Аксессуары
+      </a>
+    </li>
+    <li>
+      <a class='' target='_blank' rel='noopener' href='#'>
+        Конфигуратор
+      </a>
+    </li>
+    <li>
+      <a class='' target='_blank' rel='noopener' href='#'>
+        Поддержка
+      </a>
+    </li>
+    <li class='burger-menu__fs-element'>
+      <a class='button-with-icon' target='_blank' rel='noopener' href='#'>
+        Избранное
+      </a>
+    </li>
+    <li class='burger-menu__fs-element'>
+      <button data-open-modal-id='cart' class='button-with-icon' type='button'>
+        Корзина
+      </button>
+    </li>
+    <li>
+      <div class='current-money'>
+        1500 ₽
+      </div>
+    </li>
+  </ul>
+</nav>
+  </div>
+</header>
+
+  <section class='slider'>
+    <div class='slider__body _container'>
+      <div class='swiper slider__swiper'>
+        <div class='swiper-wrapper'>
+          <a href='#' class='swiper-slide slider__slide _cover-img'>
+            <picture><source srcset="img/pc-1.avif" type="image/avif"><source srcset="img/pc-1.webp" type="image/webp"><img src="img/pc-1.jpg" alt='Title' width='3180' height='1108'></picture>
+          </a>
+          <a href='#' class='swiper-slide slider__slide _cover-img'>
+            <picture><source srcset="img/slider-2.avif" type="image/avif"><source srcset="img/slider-2.webp" type="image/webp"><img src="img/slider-2.jpg" loading='lazy' alt='Title' width='3840' height='2160'></picture>
+          </a>
+          <a href='#' class='swiper-slide slider__slide _cover-img'>
+            <picture><source srcset="img/slider-3.avif" type="image/avif"><source srcset="img/slider-3.webp" type="image/webp"><img src="img/slider-3.jpg" loading='lazy' alt='Title' width='2560' height='1440'></picture>
+          </a>
+        </div>
+      </div>
+
+      <div id='hero-slider-pag' class='slider__pagination swiper-pagination'></div>
+
+      <div class='slider__prev-btn'>
+        <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M21 0C15.4305 0 10.089 2.21249 6.15076 6.15076C2.21249 10.089 0 15.4305 0 21C0 26.5695 2.21249 31.911 6.15076 35.8492C10.089 39.7875 15.4305 42 21 42C26.5695 42 31.911 39.7875 35.8492 35.8492C39.7875 31.911 42 26.5695 42 21C42 15.4305 39.7875 10.089 35.8492 6.15076C31.911 2.21249 26.5695 0 21 0V0ZM30.1875 19.6875C30.5356 19.6875 30.8694 19.8258 31.1156 20.0719C31.3617 20.3181 31.5 20.6519 31.5 21C31.5 21.3481 31.3617 21.6819 31.1156 21.9281C30.8694 22.1742 30.5356 22.3125 30.1875 22.3125H14.9809L20.6168 27.9457C20.7388 28.0678 20.8356 28.2127 20.9016 28.3721C20.9677 28.5315 21.0017 28.7024 21.0017 28.875C21.0017 29.0476 20.9677 29.2185 20.9016 29.3779C20.8356 29.5373 20.7388 29.6822 20.6168 29.8043C20.4947 29.9263 20.3498 30.0231 20.1904 30.0891C20.031 30.1552 19.8601 30.1892 19.6875 30.1892C19.5149 30.1892 19.344 30.1552 19.1846 30.0891C19.0252 30.0231 18.8803 29.9263 18.7582 29.8043L10.8832 21.9293C10.761 21.8073 10.664 21.6625 10.5979 21.503C10.5317 21.3436 10.4977 21.1726 10.4977 21C10.4977 20.8274 10.5317 20.6564 10.5979 20.497C10.664 20.3375 10.761 20.1927 10.8832 20.0707L18.7582 12.1957C19.0047 11.9493 19.339 11.8108 19.6875 11.8108C20.036 11.8108 20.3703 11.9493 20.6168 12.1957C20.8632 12.4422 21.0017 12.7765 21.0017 13.125C21.0017 13.4735 20.8632 13.8078 20.6168 14.0543L14.9809 19.6875H30.1875Z" fill="black" />
+        </svg>
+      </div>
+      <div class='slider__next-btn'>
+        <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_42_355)">
+            <path d="M21 0C26.5695 0 31.911 2.21249 35.8492 6.15076C39.7875 10.089 42 15.4305 42 21C42 26.5695 39.7875 31.911 35.8492 35.8492C31.911 39.7875 26.5695 42 21 42C15.4305 42 10.089 39.7875 6.15076 35.8492C2.21249 31.911 0 26.5695 0 21C0 15.4305 2.21249 10.089 6.15076 6.15076C10.089 2.21249 15.4305 0 21 0V0ZM11.8125 19.6875C11.4644 19.6875 11.1306 19.8258 10.8844 20.0719C10.6383 20.3181 10.5 20.6519 10.5 21C10.5 21.3481 10.6383 21.6819 10.8844 21.9281C11.1306 22.1742 11.4644 22.3125 11.8125 22.3125H27.0191L21.3832 27.9457C21.2612 28.0678 21.1644 28.2127 21.0984 28.3721C21.0323 28.5315 20.9983 28.7024 20.9983 28.875C20.9983 29.0476 21.0323 29.2185 21.0984 29.3779C21.1644 29.5373 21.2612 29.6822 21.3832 29.8043C21.5053 29.9263 21.6502 30.0231 21.8096 30.0891C21.969 30.1552 22.1399 30.1892 22.3125 30.1892C22.4851 30.1892 22.656 30.1552 22.8154 30.0891C22.9748 30.0231 23.1197 29.9263 23.2418 29.8043L31.1168 21.9293C31.239 21.8073 31.336 21.6625 31.4021 21.503C31.4683 21.3436 31.5023 21.1726 31.5023 21C31.5023 20.8274 31.4683 20.6564 31.4021 20.497C31.336 20.3375 31.239 20.1927 31.1168 20.0707L23.2418 12.1957C23.1197 12.0737 22.9748 11.9769 22.8154 11.9109C22.656 11.8448 22.4851 11.8108 22.3125 11.8108C22.1399 11.8108 21.969 11.8448 21.8096 11.9109C21.6502 11.9769 21.5053 12.0737 21.3832 12.1957C21.2612 12.3178 21.1644 12.4627 21.0984 12.6221C21.0323 12.7815 20.9983 12.9524 20.9983 13.125C20.9983 13.2976 21.0323 13.4685 21.0984 13.6279C21.1644 13.7873 21.2612 13.9322 21.3832 14.0543L27.0191 19.6875H11.8125Z" fill="black" />
+          </g>
+          <defs>
+            <clipPath id="clip0_42_355">
+              <rect width="42" height="42" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+      </div>
+    </div>
+
+    <svg id='body-right-decor' class='page-decor' width="458" height="568" viewBox="0 0 458 568" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g filter="url(#filter0_f_116_2)">
+        <path d="M469.021 100.29C476.197 99.378 481.937 106.152 479.86 113.081L375.77 460.338C373.491 467.939 363.691 469.985 358.561 463.931L103.02 162.357C97.8902 156.302 101.517 146.972 109.389 145.972L469.021 100.29Z" fill="#7ED23C" />
+      </g>
+      <defs>
+        <filter id="filter0_f_116_2" x="0.637695" y="0.207031" width="579.653" height="567.264" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+          <feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_116_2" />
+        </filter>
+      </defs>
+    </svg>
+  </section>
+
+  <section class='pick-up _decor-block'>
+    <div class='pick-up__body _container'>
+      <h1 tabindex='0' class='pick-up__title _title-margin-bottom'>Подобрать ПК под себя</h1>
+      <p class='pick-up__subtitle'>В какие игры вы играете?</p>
+      <div class='pick-up__counter'>Выбрано: <span id='counter-number'>0</span></div>
+
+      <section class='pick-up__slider-wrapper'>
+        <div class='swiper pick-up__slider'>
+          <div class='swiper-wrapper'>
+            <div class='swiper-slide pick-up__game _contain-img'>
+              <picture><source srcset="img/cyberpunk.avif" type="image/avif"><source srcset="img/cyberpunk.webp" type="image/webp"><img src="img/cyberpunk.png" loading='lazy' alt='gameName'></picture>
+            </div>
+            <div class='swiper-slide pick-up__game _contain-img'>
+              <picture><source srcset="img/cyberpunk.avif" type="image/avif"><source srcset="img/cyberpunk.webp" type="image/webp"><img src="img/cyberpunk.png" loading='lazy' alt='gameName'></picture>
+            </div>
+            <div class='swiper-slide pick-up__game _contain-img'>
+              <picture><source srcset="img/cyberpunk.avif" type="image/avif"><source srcset="img/cyberpunk.webp" type="image/webp"><img src="img/cyberpunk.png" loading='lazy' alt='gameName'></picture>
+            </div>
+            <div class='swiper-slide pick-up__game _contain-img'>
+              <picture><source srcset="img/cyberpunk.avif" type="image/avif"><source srcset="img/cyberpunk.webp" type="image/webp"><img src="img/cyberpunk.png" loading='lazy' alt='gameName'></picture>
+            </div>
+            <div class='swiper-slide pick-up__game _contain-img'>
+              <picture><source srcset="img/cyberpunk.avif" type="image/avif"><source srcset="img/cyberpunk.webp" type="image/webp"><img src="img/cyberpunk.png" loading='lazy' alt='gameName'></picture>
+            </div>
+            <div class='swiper-slide pick-up__game _contain-img'>
+              <picture><source srcset="img/cyberpunk.avif" type="image/avif"><source srcset="img/cyberpunk.webp" type="image/webp"><img src="img/cyberpunk.png" loading='lazy' alt='gameName'></picture>
+            </div>
+            <div class='swiper-slide pick-up__game _contain-img'>
+              <picture><source srcset="img/cyberpunk.avif" type="image/avif"><source srcset="img/cyberpunk.webp" type="image/webp"><img src="img/cyberpunk.png" loading='lazy' alt='gameName'></picture>
+            </div>
+            <div class='swiper-slide pick-up__game _contain-img'>
+              <picture><source srcset="img/cyberpunk.avif" type="image/avif"><source srcset="img/cyberpunk.webp" type="image/webp"><img src="img/cyberpunk.png" loading='lazy' alt='gameName'></picture>
+            </div>
+            <div class='swiper-slide pick-up__game _contain-img'>
+              <picture><source srcset="img/cyberpunk.avif" type="image/avif"><source srcset="img/cyberpunk.webp" type="image/webp"><img src="img/cyberpunk.png" loading='lazy' alt='gameName'></picture>
+            </div>
+            <div class='swiper-slide pick-up__game _contain-img'>
+              <picture><source srcset="img/cyberpunk.avif" type="image/avif"><source srcset="img/cyberpunk.webp" type="image/webp"><img src="img/cyberpunk.png" loading='lazy' alt='gameName'></picture>
+            </div>
+            <div class='swiper-slide pick-up__game _contain-img'>
+              <picture><source srcset="img/cyberpunk.avif" type="image/avif"><source srcset="img/cyberpunk.webp" type="image/webp"><img src="img/cyberpunk.png" loading='lazy' alt='gameName'></picture>
+            </div>
+            <div class='swiper-slide pick-up__game _contain-img'>
+              <picture><source srcset="img/keyboard.avif" type="image/avif"><source srcset="img/keyboard.webp" type="image/webp"><img src="img/keyboard.png" loading='lazy' alt='gameName'></picture>
+            </div>
+          </div>
+        </div>
+
+        <button type='button' class='pick-up__button-next'>
+          <svg width="82" height="119" viewBox="0 0 82 119" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="82" height="119" rx="7" fill="black" />
+            <path d="M9 17C9 13.134 12.134 10 16 10H65C68.866 10 72 13.134 72 17V100C72 103.866 68.866 107 65 107H16C12.134 107 9 103.866 9 100V17Z" fill="#7ED23C" />
+            <g clip-path="url(#clip0_0_1)">
+              <path d="M40 39C45.5695 39 50.911 41.2125 54.8492 45.1508C58.7875 49.089 61 54.4305 61 60C61 65.5695 58.7875 70.911 54.8492 74.8492C50.911 78.7875 45.5695 81 40 81C34.4305 81 29.089 78.7875 25.1508 74.8492C21.2125 70.911 19 65.5695 19 60C19 54.4305 21.2125 49.089 25.1508 45.1508C29.089 41.2125 34.4305 39 40 39V39ZM30.8125 58.6875C30.4644 58.6875 30.1306 58.8258 29.8844 59.0719C29.6383 59.3181 29.5 59.6519 29.5 60C29.5 60.3481 29.6383 60.6819 29.8844 60.9281C30.1306 61.1742 30.4644 61.3125 30.8125 61.3125H46.0191L40.3832 66.9457C40.2612 67.0678 40.1644 67.2127 40.0984 67.3721C40.0323 67.5315 39.9983 67.7024 39.9983 67.875C39.9983 68.0476 40.0323 68.2185 40.0984 68.3779C40.1644 68.5373 40.2612 68.6822 40.3832 68.8043C40.5053 68.9263 40.6502 69.0231 40.8096 69.0891C40.969 69.1552 41.1399 69.1892 41.3125 69.1892C41.4851 69.1892 41.656 69.1552 41.8154 69.0891C41.9748 69.0231 42.1197 68.9263 42.2418 68.8043L50.1168 60.9293C50.239 60.8073 50.336 60.6625 50.4021 60.503C50.4683 60.3436 50.5023 60.1726 50.5023 60C50.5023 59.8274 50.4683 59.6564 50.4021 59.497C50.336 59.3375 50.239 59.1927 50.1168 59.0707L42.2418 51.1957C42.1197 51.0737 41.9748 50.9769 41.8154 50.9109C41.656 50.8448 41.4851 50.8108 41.3125 50.8108C41.1399 50.8108 40.969 50.8448 40.8096 50.9109C40.6502 50.9769 40.5053 51.0737 40.3832 51.1957C40.2612 51.3178 40.1644 51.4627 40.0984 51.6221C40.0323 51.7815 39.9983 51.9524 39.9983 52.125C39.9983 52.2976 40.0323 52.4685 40.0984 52.6279C40.1644 52.7873 40.2612 52.9322 40.3832 53.0543L46.0191 58.6875H30.8125Z" fill="black" />
+            </g>
+            <defs>
+              <clipPath id="clip0_0_1">
+                <rect width="42" height="42" fill="white" transform="translate(19 39)" />
+              </clipPath>
+            </defs>
+          </svg>
+        </button>
+      </section>
+
+      <div class='swiper-pagination slider__pagination pick-up__pagination'></div>
+    </div>
+
+    <svg id='pick-up-top-left-decor' class='page-decor' width="561" height="583" viewBox="0 0 561 583" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g filter="url(#filter0_f_116_7)">
+        <path d="M114.767 110.011C115.053 102.783 122.682 98.2402 129.173 101.433L454.472 261.441C461.592 264.944 461.992 274.947 455.174 279.006L115.54 481.237C108.722 485.296 100.118 480.178 100.432 472.249L114.767 110.011Z" fill="#7ED23C" />
+      </g>
+      <defs>
+        <filter id="filter0_f_116_7" x="0.42334" y="0.39502" width="559.635" height="582.267" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+          <feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_116_7" />
+        </filter>
+      </defs>
+    </svg>
+    <svg id='pick-up-bottom-right-decor' class='page-decor' width="561" height="583" viewBox="0 0 561 583" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g filter="url(#filter0_f_116_8)">
+        <path d="M114.767 110.011C115.053 102.783 122.682 98.2402 129.173 101.433L454.472 261.441C461.592 264.944 461.992 274.947 455.174 279.006L115.54 481.237C108.722 485.296 100.118 480.178 100.432 472.249L114.767 110.011Z" fill="#7ED23C" />
+      </g>
+      <defs>
+        <filter id="filter0_f_116_8" x="0.42334" y="0.39502" width="559.635" height="582.267" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+          <feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_116_8" />
+        </filter>
+      </defs>
+    </svg>
+  </section>
+
+  <section class='shop-menu _decor-block'>
+    <div class='shop-menu__body _container _block-padding'>
+      <aside id='shop-menu-sidebar' class="sidebar shop-menu__sidebar">
+        <div class='spoiler shop-menu__spoiler-wrapper'>
+          <button type='button' class='spoiler__btn shop-menu__spoiler-button'>
+            <span>Видеокарты</span>
+
+            <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="0.806885" width="21.8641" height="22" rx="4" fill="black" />
+              <path d="M6.76987 7L11.739 12L16.7081 7L18.6957 8L11.739 15L4.78223 8L6.76987 7Z" fill="#7ED23C" />
+            </svg>
+          </button>
+
+          <div class='spoiler__content shop-menu__spoiler-content'>
+            <button class='shop-menu__option shop-menu__option-active' type='button'>Пример 1</button>
+            <button class='shop-menu__option' type='button'>Пример 2</button>
+          </div>
+        </div>
+        <div class='spoiler shop-menu__spoiler-wrapper'>
+          <button type='button' class='spoiler__btn shop-menu__spoiler-button'>
+            <span>Видеокарты бла бла бла</span>
+
+            <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="0.806885" width="21.8641" height="22" rx="4" fill="black" />
+              <path d="M6.76987 7L11.739 12L16.7081 7L18.6957 8L11.739 15L4.78223 8L6.76987 7Z" fill="#7ED23C" />
+            </svg>
+          </button>
+
+          <div class='spoiler__content shop-menu__spoiler-content'>
+            <button class='shop-menu__option' type='button'>Пример 1</button>
+            <button class='shop-menu__option' type='button'>Пример 2</button>
+          </div>
+        </div>
+      </aside>
+
+      <section class="shop-menu__main">
+        <article class='shop-menu__product-cart product-card'>
+  <div class="product-card__body">
+    <div class="product-card__preview _contain-img">
+      <picture><source srcset="img/pc.avif" type="image/avif"><source srcset="img/pc.webp" type="image/webp"><img src="img/pc.png" loading='lazy' alt='pc1' width='560' height='560'></picture>
+    </div>
+
+    <div class="product-card__params">
+      <p class="product-card__param">NVIDIA GeForce RTX 3050</p>
+      <p class="product-card__param">NVIDIA GeForce RTX 3050</p>
+      <p class="product-card__param">NVIDIA GeForce RTX 3050</p>
+      <p class="product-card__param">NVIDIA GeForce RTX 3050</p>
+      <p class="product-card__param">NVIDIA GeForce RTX 3050</p>
+
+      <button type='button' class="product-card__make-order-btn">
+        <p>Заказать</p>
+      </button>
+
+      <aside class="product-card__buttons">
+        <button title='Сравнить' type='button' class="product-card__compare-icon product-card__icon">
+          <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.75 0C1.55109 0 1.36032 0.0790178 1.21967 0.21967C1.07902 0.360322 1 0.551088 1 0.75C1 0.948912 1.07902 1.13968 1.21967 1.28033C1.36032 1.42098 1.55109 1.5 1.75 1.5H2.91775L0.2995 8.35725C0.266801 8.44273 0.250025 8.53348 0.25 8.625C0.25 10.5577 1.69225 12 3.625 12C5.55775 12 7 10.5577 7 8.625C6.99998 8.53348 6.9832 8.44273 6.9505 8.35725L4.333 1.5H9.25V13.5H4.75C4.45453 13.5 4.16194 13.5582 3.88896 13.6713C3.61598 13.7843 3.36794 13.9501 3.15901 14.159C2.95008 14.3679 2.78434 14.616 2.67127 14.889C2.5582 15.1619 2.5 15.4545 2.5 15.75C2.5 16.0455 2.5582 16.3381 2.67127 16.611C2.78434 16.884 2.95008 17.1321 3.15901 17.341C3.36794 17.5499 3.61598 17.7157 3.88896 17.8287C4.16194 17.9418 4.45453 18 4.75 18H15.25C15.8467 18 16.419 17.7629 16.841 17.341C17.2629 16.919 17.5 16.3467 17.5 15.75C17.5 15.1533 17.2629 14.581 16.841 14.159C16.419 13.7371 15.8467 13.5 15.25 13.5H10.75V1.5H15.5755L13.0465 8.3655C13.0158 8.44858 13.0001 8.53643 13 8.625C13 10.5577 14.4423 12 16.375 12C18.3078 12 19.75 10.5577 19.75 8.625C19.7499 8.53643 19.7342 8.44858 19.7035 8.3655L17.1745 1.5H18.25C18.4489 1.5 18.6397 1.42098 18.7803 1.28033C18.921 1.13968 19 0.948912 19 0.75C19 0.551088 18.921 0.360322 18.7803 0.21967C18.6397 0.0790178 18.4489 0 18.25 0H1.75ZM3.625 3.85275L5.161 7.875H2.089L3.625 3.85275ZM14.8255 7.875L16.375 3.66975L17.9245 7.875H14.8255Z" fill="#63CE0F" />
+          </svg>
+        </button>
+        <button title='В корзину' type='button' class="product-card__in-cart-icon product-card__icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22.5 10.2857C22.9141 10.2857 23.2676 10.4531 23.5605 10.7879C23.8535 11.1228 24 11.5268 24 12C24 12.4732 23.8535 12.8772 23.5605 13.2121C23.2676 13.5469 22.9141 13.7143 22.5 13.7143H22.3242L20.9766 22.5804C20.9141 22.9911 20.7422 23.3304 20.4609 23.5982C20.1797 23.8661 19.8594 24 19.5 24H4.5C4.14063 24 3.82031 23.8661 3.53906 23.5982C3.25781 23.3304 3.08594 22.9911 3.02344 22.5804L1.67578 13.7143H1.5C1.08594 13.7143 0.732422 13.5469 0.439453 13.2121C0.146484 12.8772 0 12.4732 0 12C0 11.5268 0.146484 11.1228 0.439453 10.7879C0.732422 10.4531 1.08594 10.2857 1.5 10.2857H22.5ZM5.68359 21C5.88672 20.9821 6.05664 20.8817 6.19336 20.6987C6.33008 20.5156 6.39063 20.308 6.375 20.0759L6 14.5045C5.98437 14.2723 5.89648 14.0781 5.73633 13.9219C5.57617 13.7656 5.39453 13.6964 5.19141 13.7143C4.98828 13.7321 4.81836 13.8326 4.68164 14.0156C4.54492 14.1987 4.48437 14.4063 4.5 14.6384L4.875 20.2098C4.89063 20.433 4.9707 20.6205 5.11523 20.7723C5.25977 20.9241 5.42969 21 5.625 21H5.68359ZM10.5 20.1429V14.5714C10.5 14.3393 10.4258 14.1384 10.2773 13.9688C10.1289 13.7991 9.95313 13.7143 9.75 13.7143C9.54687 13.7143 9.37109 13.7991 9.22266 13.9688C9.07422 14.1384 9 14.3393 9 14.5714V20.1429C9 20.375 9.07422 20.5759 9.22266 20.7455C9.37109 20.9152 9.54687 21 9.75 21C9.95313 21 10.1289 20.9152 10.2773 20.7455C10.4258 20.5759 10.5 20.375 10.5 20.1429ZM15 20.1429V14.5714C15 14.3393 14.9258 14.1384 14.7773 13.9688C14.6289 13.7991 14.4531 13.7143 14.25 13.7143C14.0469 13.7143 13.8711 13.7991 13.7227 13.9688C13.5742 14.1384 13.5 14.3393 13.5 14.5714V20.1429C13.5 20.375 13.5742 20.5759 13.7227 20.7455C13.8711 20.9152 14.0469 21 14.25 21C14.4531 21 14.6289 20.9152 14.7773 20.7455C14.9258 20.5759 15 20.375 15 20.1429ZM19.125 20.2098L19.5 14.6384C19.5156 14.4063 19.4551 14.1987 19.3184 14.0156C19.1816 13.8326 19.0117 13.7321 18.8086 13.7143C18.6055 13.6964 18.4238 13.7656 18.2637 13.9219C18.1035 14.0781 18.0156 14.2723 18 14.5045L17.625 20.0759C17.6094 20.308 17.6699 20.5156 17.8066 20.6987C17.9434 20.8817 18.1133 20.9821 18.3164 21H18.375C18.5703 21 18.7402 20.9241 18.8848 20.7723C19.0293 20.6205 19.1094 20.433 19.125 20.2098ZM5.57812 3.91071L4.48828 9.42857H2.94141L4.125 3.52232C4.27344 2.73661 4.62109 2.09598 5.16797 1.60045C5.71484 1.10491 6.33984 0.857143 7.04297 0.857143H9C9 0.625 9.07422 0.424107 9.22266 0.254464C9.37109 0.0848214 9.54687 0 9.75 0H14.25C14.4531 0 14.6289 0.0848214 14.7773 0.254464C14.9258 0.424107 15 0.625 15 0.857143H16.957C17.6602 0.857143 18.2852 1.10491 18.832 1.60045C19.3789 2.09598 19.7266 2.73661 19.875 3.52232L21.0586 9.42857H19.5117L18.4219 3.91071C18.3359 3.51786 18.1582 3.19643 17.8887 2.94643C17.6191 2.69643 17.3086 2.57143 16.957 2.57143H15C15 2.80357 14.9258 3.00446 14.7773 3.17411C14.6289 3.34375 14.4531 3.42857 14.25 3.42857H9.75C9.54687 3.42857 9.37109 3.34375 9.22266 3.17411C9.07422 3.00446 9 2.80357 9 2.57143H7.04297C6.69141 2.57143 6.38086 2.69643 6.11133 2.94643C5.8418 3.19643 5.66406 3.51786 5.57812 3.91071Z" fill="#63CE0F" />
+          </svg>
+        </button>
+        <button title='В избранное' type='button' class="product-card__in-favs-icon product-card__icon">
+          <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18.2276 1.71802C17.6747 1.17413 17.0172 0.742349 16.2929 0.44751C15.5686 0.152672 14.7918 0.000587306 14.0071 0C12.5229 0.000236995 11.0929 0.544861 10.0002 1.52604C8.90769 0.544696 7.47762 4.55985e-05 5.99338 0C5.20779 0.000798968 4.43012 0.153348 3.70511 0.448867C2.98011 0.744387 2.32209 1.17704 1.76892 1.72194C-0.590476 4.03646 -0.589474 7.65664 1.77093 9.96137L10.0002 18L18.2296 9.96137C20.59 7.65664 20.591 4.03646 18.2276 1.71802Z" fill="#63CE0F" />
+          </svg>
+        </button>
+      </aside>
+    </div>
+  </div>
+
+  <footer class="product-card__footer">
+    <p class="product-card__price _element-with-accent-point">1000 ₽</p>
+  </footer>
+</article>
+        <article class='shop-menu__product-cart product-card'>
+  <div class="product-card__body">
+    <div class="product-card__preview _contain-img">
+      <picture><source srcset="img/pc.avif" type="image/avif"><source srcset="img/pc.webp" type="image/webp"><img src="img/pc.png" loading='lazy' alt='pc1' width='560' height='560'></picture>
+    </div>
+
+    <div class="product-card__params">
+      <p class="product-card__param">NVIDIA GeForce RTX 3050</p>
+      <p class="product-card__param">NVIDIA GeForce RTX 3050</p>
+      <p class="product-card__param">NVIDIA GeForce RTX 3050</p>
+      <p class="product-card__param">NVIDIA GeForce RTX 3050</p>
+      <p class="product-card__param">NVIDIA GeForce RTX 3050</p>
+
+      <button type='button' class="product-card__make-order-btn">
+        <p>Заказать</p>
+      </button>
+
+      <aside class="product-card__buttons">
+        <button title='Сравнить' type='button' class="product-card__compare-icon product-card__icon">
+          <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.75 0C1.55109 0 1.36032 0.0790178 1.21967 0.21967C1.07902 0.360322 1 0.551088 1 0.75C1 0.948912 1.07902 1.13968 1.21967 1.28033C1.36032 1.42098 1.55109 1.5 1.75 1.5H2.91775L0.2995 8.35725C0.266801 8.44273 0.250025 8.53348 0.25 8.625C0.25 10.5577 1.69225 12 3.625 12C5.55775 12 7 10.5577 7 8.625C6.99998 8.53348 6.9832 8.44273 6.9505 8.35725L4.333 1.5H9.25V13.5H4.75C4.45453 13.5 4.16194 13.5582 3.88896 13.6713C3.61598 13.7843 3.36794 13.9501 3.15901 14.159C2.95008 14.3679 2.78434 14.616 2.67127 14.889C2.5582 15.1619 2.5 15.4545 2.5 15.75C2.5 16.0455 2.5582 16.3381 2.67127 16.611C2.78434 16.884 2.95008 17.1321 3.15901 17.341C3.36794 17.5499 3.61598 17.7157 3.88896 17.8287C4.16194 17.9418 4.45453 18 4.75 18H15.25C15.8467 18 16.419 17.7629 16.841 17.341C17.2629 16.919 17.5 16.3467 17.5 15.75C17.5 15.1533 17.2629 14.581 16.841 14.159C16.419 13.7371 15.8467 13.5 15.25 13.5H10.75V1.5H15.5755L13.0465 8.3655C13.0158 8.44858 13.0001 8.53643 13 8.625C13 10.5577 14.4423 12 16.375 12C18.3078 12 19.75 10.5577 19.75 8.625C19.7499 8.53643 19.7342 8.44858 19.7035 8.3655L17.1745 1.5H18.25C18.4489 1.5 18.6397 1.42098 18.7803 1.28033C18.921 1.13968 19 0.948912 19 0.75C19 0.551088 18.921 0.360322 18.7803 0.21967C18.6397 0.0790178 18.4489 0 18.25 0H1.75ZM3.625 3.85275L5.161 7.875H2.089L3.625 3.85275ZM14.8255 7.875L16.375 3.66975L17.9245 7.875H14.8255Z" fill="#63CE0F" />
+          </svg>
+        </button>
+        <button title='В корзину' type='button' class="product-card__in-cart-icon product-card__icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22.5 10.2857C22.9141 10.2857 23.2676 10.4531 23.5605 10.7879C23.8535 11.1228 24 11.5268 24 12C24 12.4732 23.8535 12.8772 23.5605 13.2121C23.2676 13.5469 22.9141 13.7143 22.5 13.7143H22.3242L20.9766 22.5804C20.9141 22.9911 20.7422 23.3304 20.4609 23.5982C20.1797 23.8661 19.8594 24 19.5 24H4.5C4.14063 24 3.82031 23.8661 3.53906 23.5982C3.25781 23.3304 3.08594 22.9911 3.02344 22.5804L1.67578 13.7143H1.5C1.08594 13.7143 0.732422 13.5469 0.439453 13.2121C0.146484 12.8772 0 12.4732 0 12C0 11.5268 0.146484 11.1228 0.439453 10.7879C0.732422 10.4531 1.08594 10.2857 1.5 10.2857H22.5ZM5.68359 21C5.88672 20.9821 6.05664 20.8817 6.19336 20.6987C6.33008 20.5156 6.39063 20.308 6.375 20.0759L6 14.5045C5.98437 14.2723 5.89648 14.0781 5.73633 13.9219C5.57617 13.7656 5.39453 13.6964 5.19141 13.7143C4.98828 13.7321 4.81836 13.8326 4.68164 14.0156C4.54492 14.1987 4.48437 14.4063 4.5 14.6384L4.875 20.2098C4.89063 20.433 4.9707 20.6205 5.11523 20.7723C5.25977 20.9241 5.42969 21 5.625 21H5.68359ZM10.5 20.1429V14.5714C10.5 14.3393 10.4258 14.1384 10.2773 13.9688C10.1289 13.7991 9.95313 13.7143 9.75 13.7143C9.54687 13.7143 9.37109 13.7991 9.22266 13.9688C9.07422 14.1384 9 14.3393 9 14.5714V20.1429C9 20.375 9.07422 20.5759 9.22266 20.7455C9.37109 20.9152 9.54687 21 9.75 21C9.95313 21 10.1289 20.9152 10.2773 20.7455C10.4258 20.5759 10.5 20.375 10.5 20.1429ZM15 20.1429V14.5714C15 14.3393 14.9258 14.1384 14.7773 13.9688C14.6289 13.7991 14.4531 13.7143 14.25 13.7143C14.0469 13.7143 13.8711 13.7991 13.7227 13.9688C13.5742 14.1384 13.5 14.3393 13.5 14.5714V20.1429C13.5 20.375 13.5742 20.5759 13.7227 20.7455C13.8711 20.9152 14.0469 21 14.25 21C14.4531 21 14.6289 20.9152 14.7773 20.7455C14.9258 20.5759 15 20.375 15 20.1429ZM19.125 20.2098L19.5 14.6384C19.5156 14.4063 19.4551 14.1987 19.3184 14.0156C19.1816 13.8326 19.0117 13.7321 18.8086 13.7143C18.6055 13.6964 18.4238 13.7656 18.2637 13.9219C18.1035 14.0781 18.0156 14.2723 18 14.5045L17.625 20.0759C17.6094 20.308 17.6699 20.5156 17.8066 20.6987C17.9434 20.8817 18.1133 20.9821 18.3164 21H18.375C18.5703 21 18.7402 20.9241 18.8848 20.7723C19.0293 20.6205 19.1094 20.433 19.125 20.2098ZM5.57812 3.91071L4.48828 9.42857H2.94141L4.125 3.52232C4.27344 2.73661 4.62109 2.09598 5.16797 1.60045C5.71484 1.10491 6.33984 0.857143 7.04297 0.857143H9C9 0.625 9.07422 0.424107 9.22266 0.254464C9.37109 0.0848214 9.54687 0 9.75 0H14.25C14.4531 0 14.6289 0.0848214 14.7773 0.254464C14.9258 0.424107 15 0.625 15 0.857143H16.957C17.6602 0.857143 18.2852 1.10491 18.832 1.60045C19.3789 2.09598 19.7266 2.73661 19.875 3.52232L21.0586 9.42857H19.5117L18.4219 3.91071C18.3359 3.51786 18.1582 3.19643 17.8887 2.94643C17.6191 2.69643 17.3086 2.57143 16.957 2.57143H15C15 2.80357 14.9258 3.00446 14.7773 3.17411C14.6289 3.34375 14.4531 3.42857 14.25 3.42857H9.75C9.54687 3.42857 9.37109 3.34375 9.22266 3.17411C9.07422 3.00446 9 2.80357 9 2.57143H7.04297C6.69141 2.57143 6.38086 2.69643 6.11133 2.94643C5.8418 3.19643 5.66406 3.51786 5.57812 3.91071Z" fill="#63CE0F" />
+          </svg>
+        </button>
+        <button title='В избранное' type='button' class="product-card__in-favs-icon product-card__icon">
+          <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18.2276 1.71802C17.6747 1.17413 17.0172 0.742349 16.2929 0.44751C15.5686 0.152672 14.7918 0.000587306 14.0071 0C12.5229 0.000236995 11.0929 0.544861 10.0002 1.52604C8.90769 0.544696 7.47762 4.55985e-05 5.99338 0C5.20779 0.000798968 4.43012 0.153348 3.70511 0.448867C2.98011 0.744387 2.32209 1.17704 1.76892 1.72194C-0.590476 4.03646 -0.589474 7.65664 1.77093 9.96137L10.0002 18L18.2296 9.96137C20.59 7.65664 20.591 4.03646 18.2276 1.71802Z" fill="#63CE0F" />
+          </svg>
+        </button>
+      </aside>
+    </div>
+  </div>
+
+  <footer class="product-card__footer">
+    <p class="product-card__price _element-with-accent-point">1000 ₽</p>
+  </footer>
+</article>
+        <article class='shop-menu__product-cart product-card'>
+  <div class="product-card__body">
+    <div class="product-card__preview _contain-img">
+      <picture><source srcset="img/pc.avif" type="image/avif"><source srcset="img/pc.webp" type="image/webp"><img src="img/pc.png" loading='lazy' alt='pc1' width='560' height='560'></picture>
+    </div>
+
+    <div class="product-card__params">
+      <p class="product-card__param">NVIDIA GeForce RTX 3050</p>
+      <p class="product-card__param">NVIDIA GeForce RTX 3050</p>
+      <p class="product-card__param">NVIDIA GeForce RTX 3050</p>
+      <p class="product-card__param">NVIDIA GeForce RTX 3050</p>
+      <p class="product-card__param">NVIDIA GeForce RTX 3050</p>
+
+      <button type='button' class="product-card__make-order-btn">
+        <p>Заказать</p>
+      </button>
+
+      <aside class="product-card__buttons">
+        <button title='Сравнить' type='button' class="product-card__compare-icon product-card__icon">
+          <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.75 0C1.55109 0 1.36032 0.0790178 1.21967 0.21967C1.07902 0.360322 1 0.551088 1 0.75C1 0.948912 1.07902 1.13968 1.21967 1.28033C1.36032 1.42098 1.55109 1.5 1.75 1.5H2.91775L0.2995 8.35725C0.266801 8.44273 0.250025 8.53348 0.25 8.625C0.25 10.5577 1.69225 12 3.625 12C5.55775 12 7 10.5577 7 8.625C6.99998 8.53348 6.9832 8.44273 6.9505 8.35725L4.333 1.5H9.25V13.5H4.75C4.45453 13.5 4.16194 13.5582 3.88896 13.6713C3.61598 13.7843 3.36794 13.9501 3.15901 14.159C2.95008 14.3679 2.78434 14.616 2.67127 14.889C2.5582 15.1619 2.5 15.4545 2.5 15.75C2.5 16.0455 2.5582 16.3381 2.67127 16.611C2.78434 16.884 2.95008 17.1321 3.15901 17.341C3.36794 17.5499 3.61598 17.7157 3.88896 17.8287C4.16194 17.9418 4.45453 18 4.75 18H15.25C15.8467 18 16.419 17.7629 16.841 17.341C17.2629 16.919 17.5 16.3467 17.5 15.75C17.5 15.1533 17.2629 14.581 16.841 14.159C16.419 13.7371 15.8467 13.5 15.25 13.5H10.75V1.5H15.5755L13.0465 8.3655C13.0158 8.44858 13.0001 8.53643 13 8.625C13 10.5577 14.4423 12 16.375 12C18.3078 12 19.75 10.5577 19.75 8.625C19.7499 8.53643 19.7342 8.44858 19.7035 8.3655L17.1745 1.5H18.25C18.4489 1.5 18.6397 1.42098 18.7803 1.28033C18.921 1.13968 19 0.948912 19 0.75C19 0.551088 18.921 0.360322 18.7803 0.21967C18.6397 0.0790178 18.4489 0 18.25 0H1.75ZM3.625 3.85275L5.161 7.875H2.089L3.625 3.85275ZM14.8255 7.875L16.375 3.66975L17.9245 7.875H14.8255Z" fill="#63CE0F" />
+          </svg>
+        </button>
+        <button title='В корзину' type='button' class="product-card__in-cart-icon product-card__icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22.5 10.2857C22.9141 10.2857 23.2676 10.4531 23.5605 10.7879C23.8535 11.1228 24 11.5268 24 12C24 12.4732 23.8535 12.8772 23.5605 13.2121C23.2676 13.5469 22.9141 13.7143 22.5 13.7143H22.3242L20.9766 22.5804C20.9141 22.9911 20.7422 23.3304 20.4609 23.5982C20.1797 23.8661 19.8594 24 19.5 24H4.5C4.14063 24 3.82031 23.8661 3.53906 23.5982C3.25781 23.3304 3.08594 22.9911 3.02344 22.5804L1.67578 13.7143H1.5C1.08594 13.7143 0.732422 13.5469 0.439453 13.2121C0.146484 12.8772 0 12.4732 0 12C0 11.5268 0.146484 11.1228 0.439453 10.7879C0.732422 10.4531 1.08594 10.2857 1.5 10.2857H22.5ZM5.68359 21C5.88672 20.9821 6.05664 20.8817 6.19336 20.6987C6.33008 20.5156 6.39063 20.308 6.375 20.0759L6 14.5045C5.98437 14.2723 5.89648 14.0781 5.73633 13.9219C5.57617 13.7656 5.39453 13.6964 5.19141 13.7143C4.98828 13.7321 4.81836 13.8326 4.68164 14.0156C4.54492 14.1987 4.48437 14.4063 4.5 14.6384L4.875 20.2098C4.89063 20.433 4.9707 20.6205 5.11523 20.7723C5.25977 20.9241 5.42969 21 5.625 21H5.68359ZM10.5 20.1429V14.5714C10.5 14.3393 10.4258 14.1384 10.2773 13.9688C10.1289 13.7991 9.95313 13.7143 9.75 13.7143C9.54687 13.7143 9.37109 13.7991 9.22266 13.9688C9.07422 14.1384 9 14.3393 9 14.5714V20.1429C9 20.375 9.07422 20.5759 9.22266 20.7455C9.37109 20.9152 9.54687 21 9.75 21C9.95313 21 10.1289 20.9152 10.2773 20.7455C10.4258 20.5759 10.5 20.375 10.5 20.1429ZM15 20.1429V14.5714C15 14.3393 14.9258 14.1384 14.7773 13.9688C14.6289 13.7991 14.4531 13.7143 14.25 13.7143C14.0469 13.7143 13.8711 13.7991 13.7227 13.9688C13.5742 14.1384 13.5 14.3393 13.5 14.5714V20.1429C13.5 20.375 13.5742 20.5759 13.7227 20.7455C13.8711 20.9152 14.0469 21 14.25 21C14.4531 21 14.6289 20.9152 14.7773 20.7455C14.9258 20.5759 15 20.375 15 20.1429ZM19.125 20.2098L19.5 14.6384C19.5156 14.4063 19.4551 14.1987 19.3184 14.0156C19.1816 13.8326 19.0117 13.7321 18.8086 13.7143C18.6055 13.6964 18.4238 13.7656 18.2637 13.9219C18.1035 14.0781 18.0156 14.2723 18 14.5045L17.625 20.0759C17.6094 20.308 17.6699 20.5156 17.8066 20.6987C17.9434 20.8817 18.1133 20.9821 18.3164 21H18.375C18.5703 21 18.7402 20.9241 18.8848 20.7723C19.0293 20.6205 19.1094 20.433 19.125 20.2098ZM5.57812 3.91071L4.48828 9.42857H2.94141L4.125 3.52232C4.27344 2.73661 4.62109 2.09598 5.16797 1.60045C5.71484 1.10491 6.33984 0.857143 7.04297 0.857143H9C9 0.625 9.07422 0.424107 9.22266 0.254464C9.37109 0.0848214 9.54687 0 9.75 0H14.25C14.4531 0 14.6289 0.0848214 14.7773 0.254464C14.9258 0.424107 15 0.625 15 0.857143H16.957C17.6602 0.857143 18.2852 1.10491 18.832 1.60045C19.3789 2.09598 19.7266 2.73661 19.875 3.52232L21.0586 9.42857H19.5117L18.4219 3.91071C18.3359 3.51786 18.1582 3.19643 17.8887 2.94643C17.6191 2.69643 17.3086 2.57143 16.957 2.57143H15C15 2.80357 14.9258 3.00446 14.7773 3.17411C14.6289 3.34375 14.4531 3.42857 14.25 3.42857H9.75C9.54687 3.42857 9.37109 3.34375 9.22266 3.17411C9.07422 3.00446 9 2.80357 9 2.57143H7.04297C6.69141 2.57143 6.38086 2.69643 6.11133 2.94643C5.8418 3.19643 5.66406 3.51786 5.57812 3.91071Z" fill="#63CE0F" />
+          </svg>
+        </button>
+        <button title='В избранное' type='button' class="product-card__in-favs-icon product-card__icon">
+          <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18.2276 1.71802C17.6747 1.17413 17.0172 0.742349 16.2929 0.44751C15.5686 0.152672 14.7918 0.000587306 14.0071 0C12.5229 0.000236995 11.0929 0.544861 10.0002 1.52604C8.90769 0.544696 7.47762 4.55985e-05 5.99338 0C5.20779 0.000798968 4.43012 0.153348 3.70511 0.448867C2.98011 0.744387 2.32209 1.17704 1.76892 1.72194C-0.590476 4.03646 -0.589474 7.65664 1.77093 9.96137L10.0002 18L18.2296 9.96137C20.59 7.65664 20.591 4.03646 18.2276 1.71802Z" fill="#63CE0F" />
+          </svg>
+        </button>
+      </aside>
+    </div>
+  </div>
+
+  <footer class="product-card__footer">
+    <p class="product-card__price _element-with-accent-point">1000 ₽</p>
+  </footer>
+</article>
+        <article class='shop-menu__product-cart product-card'>
+  <div class="product-card__body">
+    <div class="product-card__preview _contain-img">
+      <picture><source srcset="img/pc.avif" type="image/avif"><source srcset="img/pc.webp" type="image/webp"><img src="img/pc.png" loading='lazy' alt='pc1' width='560' height='560'></picture>
+    </div>
+
+    <div class="product-card__params">
+      <p class="product-card__param">NVIDIA GeForce RTX 3050</p>
+      <p class="product-card__param">NVIDIA GeForce RTX 3050</p>
+      <p class="product-card__param">NVIDIA GeForce RTX 3050</p>
+      <p class="product-card__param">NVIDIA GeForce RTX 3050</p>
+      <p class="product-card__param">NVIDIA GeForce RTX 3050</p>
+
+      <button type='button' class="product-card__make-order-btn">
+        <p>Заказать</p>
+      </button>
+
+      <aside class="product-card__buttons">
+        <button title='Сравнить' type='button' class="product-card__compare-icon product-card__icon">
+          <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.75 0C1.55109 0 1.36032 0.0790178 1.21967 0.21967C1.07902 0.360322 1 0.551088 1 0.75C1 0.948912 1.07902 1.13968 1.21967 1.28033C1.36032 1.42098 1.55109 1.5 1.75 1.5H2.91775L0.2995 8.35725C0.266801 8.44273 0.250025 8.53348 0.25 8.625C0.25 10.5577 1.69225 12 3.625 12C5.55775 12 7 10.5577 7 8.625C6.99998 8.53348 6.9832 8.44273 6.9505 8.35725L4.333 1.5H9.25V13.5H4.75C4.45453 13.5 4.16194 13.5582 3.88896 13.6713C3.61598 13.7843 3.36794 13.9501 3.15901 14.159C2.95008 14.3679 2.78434 14.616 2.67127 14.889C2.5582 15.1619 2.5 15.4545 2.5 15.75C2.5 16.0455 2.5582 16.3381 2.67127 16.611C2.78434 16.884 2.95008 17.1321 3.15901 17.341C3.36794 17.5499 3.61598 17.7157 3.88896 17.8287C4.16194 17.9418 4.45453 18 4.75 18H15.25C15.8467 18 16.419 17.7629 16.841 17.341C17.2629 16.919 17.5 16.3467 17.5 15.75C17.5 15.1533 17.2629 14.581 16.841 14.159C16.419 13.7371 15.8467 13.5 15.25 13.5H10.75V1.5H15.5755L13.0465 8.3655C13.0158 8.44858 13.0001 8.53643 13 8.625C13 10.5577 14.4423 12 16.375 12C18.3078 12 19.75 10.5577 19.75 8.625C19.7499 8.53643 19.7342 8.44858 19.7035 8.3655L17.1745 1.5H18.25C18.4489 1.5 18.6397 1.42098 18.7803 1.28033C18.921 1.13968 19 0.948912 19 0.75C19 0.551088 18.921 0.360322 18.7803 0.21967C18.6397 0.0790178 18.4489 0 18.25 0H1.75ZM3.625 3.85275L5.161 7.875H2.089L3.625 3.85275ZM14.8255 7.875L16.375 3.66975L17.9245 7.875H14.8255Z" fill="#63CE0F" />
+          </svg>
+        </button>
+        <button title='В корзину' type='button' class="product-card__in-cart-icon product-card__icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22.5 10.2857C22.9141 10.2857 23.2676 10.4531 23.5605 10.7879C23.8535 11.1228 24 11.5268 24 12C24 12.4732 23.8535 12.8772 23.5605 13.2121C23.2676 13.5469 22.9141 13.7143 22.5 13.7143H22.3242L20.9766 22.5804C20.9141 22.9911 20.7422 23.3304 20.4609 23.5982C20.1797 23.8661 19.8594 24 19.5 24H4.5C4.14063 24 3.82031 23.8661 3.53906 23.5982C3.25781 23.3304 3.08594 22.9911 3.02344 22.5804L1.67578 13.7143H1.5C1.08594 13.7143 0.732422 13.5469 0.439453 13.2121C0.146484 12.8772 0 12.4732 0 12C0 11.5268 0.146484 11.1228 0.439453 10.7879C0.732422 10.4531 1.08594 10.2857 1.5 10.2857H22.5ZM5.68359 21C5.88672 20.9821 6.05664 20.8817 6.19336 20.6987C6.33008 20.5156 6.39063 20.308 6.375 20.0759L6 14.5045C5.98437 14.2723 5.89648 14.0781 5.73633 13.9219C5.57617 13.7656 5.39453 13.6964 5.19141 13.7143C4.98828 13.7321 4.81836 13.8326 4.68164 14.0156C4.54492 14.1987 4.48437 14.4063 4.5 14.6384L4.875 20.2098C4.89063 20.433 4.9707 20.6205 5.11523 20.7723C5.25977 20.9241 5.42969 21 5.625 21H5.68359ZM10.5 20.1429V14.5714C10.5 14.3393 10.4258 14.1384 10.2773 13.9688C10.1289 13.7991 9.95313 13.7143 9.75 13.7143C9.54687 13.7143 9.37109 13.7991 9.22266 13.9688C9.07422 14.1384 9 14.3393 9 14.5714V20.1429C9 20.375 9.07422 20.5759 9.22266 20.7455C9.37109 20.9152 9.54687 21 9.75 21C9.95313 21 10.1289 20.9152 10.2773 20.7455C10.4258 20.5759 10.5 20.375 10.5 20.1429ZM15 20.1429V14.5714C15 14.3393 14.9258 14.1384 14.7773 13.9688C14.6289 13.7991 14.4531 13.7143 14.25 13.7143C14.0469 13.7143 13.8711 13.7991 13.7227 13.9688C13.5742 14.1384 13.5 14.3393 13.5 14.5714V20.1429C13.5 20.375 13.5742 20.5759 13.7227 20.7455C13.8711 20.9152 14.0469 21 14.25 21C14.4531 21 14.6289 20.9152 14.7773 20.7455C14.9258 20.5759 15 20.375 15 20.1429ZM19.125 20.2098L19.5 14.6384C19.5156 14.4063 19.4551 14.1987 19.3184 14.0156C19.1816 13.8326 19.0117 13.7321 18.8086 13.7143C18.6055 13.6964 18.4238 13.7656 18.2637 13.9219C18.1035 14.0781 18.0156 14.2723 18 14.5045L17.625 20.0759C17.6094 20.308 17.6699 20.5156 17.8066 20.6987C17.9434 20.8817 18.1133 20.9821 18.3164 21H18.375C18.5703 21 18.7402 20.9241 18.8848 20.7723C19.0293 20.6205 19.1094 20.433 19.125 20.2098ZM5.57812 3.91071L4.48828 9.42857H2.94141L4.125 3.52232C4.27344 2.73661 4.62109 2.09598 5.16797 1.60045C5.71484 1.10491 6.33984 0.857143 7.04297 0.857143H9C9 0.625 9.07422 0.424107 9.22266 0.254464C9.37109 0.0848214 9.54687 0 9.75 0H14.25C14.4531 0 14.6289 0.0848214 14.7773 0.254464C14.9258 0.424107 15 0.625 15 0.857143H16.957C17.6602 0.857143 18.2852 1.10491 18.832 1.60045C19.3789 2.09598 19.7266 2.73661 19.875 3.52232L21.0586 9.42857H19.5117L18.4219 3.91071C18.3359 3.51786 18.1582 3.19643 17.8887 2.94643C17.6191 2.69643 17.3086 2.57143 16.957 2.57143H15C15 2.80357 14.9258 3.00446 14.7773 3.17411C14.6289 3.34375 14.4531 3.42857 14.25 3.42857H9.75C9.54687 3.42857 9.37109 3.34375 9.22266 3.17411C9.07422 3.00446 9 2.80357 9 2.57143H7.04297C6.69141 2.57143 6.38086 2.69643 6.11133 2.94643C5.8418 3.19643 5.66406 3.51786 5.57812 3.91071Z" fill="#63CE0F" />
+          </svg>
+        </button>
+        <button title='В избранное' type='button' class="product-card__in-favs-icon product-card__icon">
+          <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18.2276 1.71802C17.6747 1.17413 17.0172 0.742349 16.2929 0.44751C15.5686 0.152672 14.7918 0.000587306 14.0071 0C12.5229 0.000236995 11.0929 0.544861 10.0002 1.52604C8.90769 0.544696 7.47762 4.55985e-05 5.99338 0C5.20779 0.000798968 4.43012 0.153348 3.70511 0.448867C2.98011 0.744387 2.32209 1.17704 1.76892 1.72194C-0.590476 4.03646 -0.589474 7.65664 1.77093 9.96137L10.0002 18L18.2296 9.96137C20.59 7.65664 20.591 4.03646 18.2276 1.71802Z" fill="#63CE0F" />
+          </svg>
+        </button>
+      </aside>
+    </div>
+  </div>
+
+  <footer class="product-card__footer">
+    <p class="product-card__price _element-with-accent-point">1000 ₽</p>
+  </footer>
+</article>
+        <article class='shop-menu__product-cart product-card'>
+  <div class="product-card__body">
+    <div class="product-card__preview _contain-img">
+      <picture><source srcset="img/pc.avif" type="image/avif"><source srcset="img/pc.webp" type="image/webp"><img src="img/pc.png" loading='lazy' alt='pc1' width='560' height='560'></picture>
+    </div>
+
+    <div class="product-card__params">
+      <p class="product-card__param">NVIDIA GeForce RTX 3050</p>
+      <p class="product-card__param">NVIDIA GeForce RTX 3050</p>
+      <p class="product-card__param">NVIDIA GeForce RTX 3050</p>
+      <p class="product-card__param">NVIDIA GeForce RTX 3050</p>
+      <p class="product-card__param">NVIDIA GeForce RTX 3050</p>
+
+      <button type='button' class="product-card__make-order-btn">
+        <p>Заказать</p>
+      </button>
+
+      <aside class="product-card__buttons">
+        <button title='Сравнить' type='button' class="product-card__compare-icon product-card__icon">
+          <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.75 0C1.55109 0 1.36032 0.0790178 1.21967 0.21967C1.07902 0.360322 1 0.551088 1 0.75C1 0.948912 1.07902 1.13968 1.21967 1.28033C1.36032 1.42098 1.55109 1.5 1.75 1.5H2.91775L0.2995 8.35725C0.266801 8.44273 0.250025 8.53348 0.25 8.625C0.25 10.5577 1.69225 12 3.625 12C5.55775 12 7 10.5577 7 8.625C6.99998 8.53348 6.9832 8.44273 6.9505 8.35725L4.333 1.5H9.25V13.5H4.75C4.45453 13.5 4.16194 13.5582 3.88896 13.6713C3.61598 13.7843 3.36794 13.9501 3.15901 14.159C2.95008 14.3679 2.78434 14.616 2.67127 14.889C2.5582 15.1619 2.5 15.4545 2.5 15.75C2.5 16.0455 2.5582 16.3381 2.67127 16.611C2.78434 16.884 2.95008 17.1321 3.15901 17.341C3.36794 17.5499 3.61598 17.7157 3.88896 17.8287C4.16194 17.9418 4.45453 18 4.75 18H15.25C15.8467 18 16.419 17.7629 16.841 17.341C17.2629 16.919 17.5 16.3467 17.5 15.75C17.5 15.1533 17.2629 14.581 16.841 14.159C16.419 13.7371 15.8467 13.5 15.25 13.5H10.75V1.5H15.5755L13.0465 8.3655C13.0158 8.44858 13.0001 8.53643 13 8.625C13 10.5577 14.4423 12 16.375 12C18.3078 12 19.75 10.5577 19.75 8.625C19.7499 8.53643 19.7342 8.44858 19.7035 8.3655L17.1745 1.5H18.25C18.4489 1.5 18.6397 1.42098 18.7803 1.28033C18.921 1.13968 19 0.948912 19 0.75C19 0.551088 18.921 0.360322 18.7803 0.21967C18.6397 0.0790178 18.4489 0 18.25 0H1.75ZM3.625 3.85275L5.161 7.875H2.089L3.625 3.85275ZM14.8255 7.875L16.375 3.66975L17.9245 7.875H14.8255Z" fill="#63CE0F" />
+          </svg>
+        </button>
+        <button title='В корзину' type='button' class="product-card__in-cart-icon product-card__icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22.5 10.2857C22.9141 10.2857 23.2676 10.4531 23.5605 10.7879C23.8535 11.1228 24 11.5268 24 12C24 12.4732 23.8535 12.8772 23.5605 13.2121C23.2676 13.5469 22.9141 13.7143 22.5 13.7143H22.3242L20.9766 22.5804C20.9141 22.9911 20.7422 23.3304 20.4609 23.5982C20.1797 23.8661 19.8594 24 19.5 24H4.5C4.14063 24 3.82031 23.8661 3.53906 23.5982C3.25781 23.3304 3.08594 22.9911 3.02344 22.5804L1.67578 13.7143H1.5C1.08594 13.7143 0.732422 13.5469 0.439453 13.2121C0.146484 12.8772 0 12.4732 0 12C0 11.5268 0.146484 11.1228 0.439453 10.7879C0.732422 10.4531 1.08594 10.2857 1.5 10.2857H22.5ZM5.68359 21C5.88672 20.9821 6.05664 20.8817 6.19336 20.6987C6.33008 20.5156 6.39063 20.308 6.375 20.0759L6 14.5045C5.98437 14.2723 5.89648 14.0781 5.73633 13.9219C5.57617 13.7656 5.39453 13.6964 5.19141 13.7143C4.98828 13.7321 4.81836 13.8326 4.68164 14.0156C4.54492 14.1987 4.48437 14.4063 4.5 14.6384L4.875 20.2098C4.89063 20.433 4.9707 20.6205 5.11523 20.7723C5.25977 20.9241 5.42969 21 5.625 21H5.68359ZM10.5 20.1429V14.5714C10.5 14.3393 10.4258 14.1384 10.2773 13.9688C10.1289 13.7991 9.95313 13.7143 9.75 13.7143C9.54687 13.7143 9.37109 13.7991 9.22266 13.9688C9.07422 14.1384 9 14.3393 9 14.5714V20.1429C9 20.375 9.07422 20.5759 9.22266 20.7455C9.37109 20.9152 9.54687 21 9.75 21C9.95313 21 10.1289 20.9152 10.2773 20.7455C10.4258 20.5759 10.5 20.375 10.5 20.1429ZM15 20.1429V14.5714C15 14.3393 14.9258 14.1384 14.7773 13.9688C14.6289 13.7991 14.4531 13.7143 14.25 13.7143C14.0469 13.7143 13.8711 13.7991 13.7227 13.9688C13.5742 14.1384 13.5 14.3393 13.5 14.5714V20.1429C13.5 20.375 13.5742 20.5759 13.7227 20.7455C13.8711 20.9152 14.0469 21 14.25 21C14.4531 21 14.6289 20.9152 14.7773 20.7455C14.9258 20.5759 15 20.375 15 20.1429ZM19.125 20.2098L19.5 14.6384C19.5156 14.4063 19.4551 14.1987 19.3184 14.0156C19.1816 13.8326 19.0117 13.7321 18.8086 13.7143C18.6055 13.6964 18.4238 13.7656 18.2637 13.9219C18.1035 14.0781 18.0156 14.2723 18 14.5045L17.625 20.0759C17.6094 20.308 17.6699 20.5156 17.8066 20.6987C17.9434 20.8817 18.1133 20.9821 18.3164 21H18.375C18.5703 21 18.7402 20.9241 18.8848 20.7723C19.0293 20.6205 19.1094 20.433 19.125 20.2098ZM5.57812 3.91071L4.48828 9.42857H2.94141L4.125 3.52232C4.27344 2.73661 4.62109 2.09598 5.16797 1.60045C5.71484 1.10491 6.33984 0.857143 7.04297 0.857143H9C9 0.625 9.07422 0.424107 9.22266 0.254464C9.37109 0.0848214 9.54687 0 9.75 0H14.25C14.4531 0 14.6289 0.0848214 14.7773 0.254464C14.9258 0.424107 15 0.625 15 0.857143H16.957C17.6602 0.857143 18.2852 1.10491 18.832 1.60045C19.3789 2.09598 19.7266 2.73661 19.875 3.52232L21.0586 9.42857H19.5117L18.4219 3.91071C18.3359 3.51786 18.1582 3.19643 17.8887 2.94643C17.6191 2.69643 17.3086 2.57143 16.957 2.57143H15C15 2.80357 14.9258 3.00446 14.7773 3.17411C14.6289 3.34375 14.4531 3.42857 14.25 3.42857H9.75C9.54687 3.42857 9.37109 3.34375 9.22266 3.17411C9.07422 3.00446 9 2.80357 9 2.57143H7.04297C6.69141 2.57143 6.38086 2.69643 6.11133 2.94643C5.8418 3.19643 5.66406 3.51786 5.57812 3.91071Z" fill="#63CE0F" />
+          </svg>
+        </button>
+        <button title='В избранное' type='button' class="product-card__in-favs-icon product-card__icon">
+          <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18.2276 1.71802C17.6747 1.17413 17.0172 0.742349 16.2929 0.44751C15.5686 0.152672 14.7918 0.000587306 14.0071 0C12.5229 0.000236995 11.0929 0.544861 10.0002 1.52604C8.90769 0.544696 7.47762 4.55985e-05 5.99338 0C5.20779 0.000798968 4.43012 0.153348 3.70511 0.448867C2.98011 0.744387 2.32209 1.17704 1.76892 1.72194C-0.590476 4.03646 -0.589474 7.65664 1.77093 9.96137L10.0002 18L18.2296 9.96137C20.59 7.65664 20.591 4.03646 18.2276 1.71802Z" fill="#63CE0F" />
+          </svg>
+        </button>
+      </aside>
+    </div>
+  </div>
+
+  <footer class="product-card__footer">
+    <p class="product-card__price _element-with-accent-point">1000 ₽</p>
+  </footer>
+</article>
+        <article class='shop-menu__product-cart product-card'>
+  <div class="product-card__body">
+    <div class="product-card__preview _contain-img">
+      <picture><source srcset="img/pc.avif" type="image/avif"><source srcset="img/pc.webp" type="image/webp"><img src="img/pc.png" loading='lazy' alt='pc1' width='560' height='560'></picture>
+    </div>
+
+    <div class="product-card__params">
+      <p class="product-card__param">NVIDIA GeForce RTX 3050</p>
+      <p class="product-card__param">NVIDIA GeForce RTX 3050</p>
+      <p class="product-card__param">NVIDIA GeForce RTX 3050</p>
+      <p class="product-card__param">NVIDIA GeForce RTX 3050</p>
+      <p class="product-card__param">NVIDIA GeForce RTX 3050</p>
+
+      <button type='button' class="product-card__make-order-btn">
+        <p>Заказать</p>
+      </button>
+
+      <aside class="product-card__buttons">
+        <button title='Сравнить' type='button' class="product-card__compare-icon product-card__icon">
+          <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.75 0C1.55109 0 1.36032 0.0790178 1.21967 0.21967C1.07902 0.360322 1 0.551088 1 0.75C1 0.948912 1.07902 1.13968 1.21967 1.28033C1.36032 1.42098 1.55109 1.5 1.75 1.5H2.91775L0.2995 8.35725C0.266801 8.44273 0.250025 8.53348 0.25 8.625C0.25 10.5577 1.69225 12 3.625 12C5.55775 12 7 10.5577 7 8.625C6.99998 8.53348 6.9832 8.44273 6.9505 8.35725L4.333 1.5H9.25V13.5H4.75C4.45453 13.5 4.16194 13.5582 3.88896 13.6713C3.61598 13.7843 3.36794 13.9501 3.15901 14.159C2.95008 14.3679 2.78434 14.616 2.67127 14.889C2.5582 15.1619 2.5 15.4545 2.5 15.75C2.5 16.0455 2.5582 16.3381 2.67127 16.611C2.78434 16.884 2.95008 17.1321 3.15901 17.341C3.36794 17.5499 3.61598 17.7157 3.88896 17.8287C4.16194 17.9418 4.45453 18 4.75 18H15.25C15.8467 18 16.419 17.7629 16.841 17.341C17.2629 16.919 17.5 16.3467 17.5 15.75C17.5 15.1533 17.2629 14.581 16.841 14.159C16.419 13.7371 15.8467 13.5 15.25 13.5H10.75V1.5H15.5755L13.0465 8.3655C13.0158 8.44858 13.0001 8.53643 13 8.625C13 10.5577 14.4423 12 16.375 12C18.3078 12 19.75 10.5577 19.75 8.625C19.7499 8.53643 19.7342 8.44858 19.7035 8.3655L17.1745 1.5H18.25C18.4489 1.5 18.6397 1.42098 18.7803 1.28033C18.921 1.13968 19 0.948912 19 0.75C19 0.551088 18.921 0.360322 18.7803 0.21967C18.6397 0.0790178 18.4489 0 18.25 0H1.75ZM3.625 3.85275L5.161 7.875H2.089L3.625 3.85275ZM14.8255 7.875L16.375 3.66975L17.9245 7.875H14.8255Z" fill="#63CE0F" />
+          </svg>
+        </button>
+        <button title='В корзину' type='button' class="product-card__in-cart-icon product-card__icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22.5 10.2857C22.9141 10.2857 23.2676 10.4531 23.5605 10.7879C23.8535 11.1228 24 11.5268 24 12C24 12.4732 23.8535 12.8772 23.5605 13.2121C23.2676 13.5469 22.9141 13.7143 22.5 13.7143H22.3242L20.9766 22.5804C20.9141 22.9911 20.7422 23.3304 20.4609 23.5982C20.1797 23.8661 19.8594 24 19.5 24H4.5C4.14063 24 3.82031 23.8661 3.53906 23.5982C3.25781 23.3304 3.08594 22.9911 3.02344 22.5804L1.67578 13.7143H1.5C1.08594 13.7143 0.732422 13.5469 0.439453 13.2121C0.146484 12.8772 0 12.4732 0 12C0 11.5268 0.146484 11.1228 0.439453 10.7879C0.732422 10.4531 1.08594 10.2857 1.5 10.2857H22.5ZM5.68359 21C5.88672 20.9821 6.05664 20.8817 6.19336 20.6987C6.33008 20.5156 6.39063 20.308 6.375 20.0759L6 14.5045C5.98437 14.2723 5.89648 14.0781 5.73633 13.9219C5.57617 13.7656 5.39453 13.6964 5.19141 13.7143C4.98828 13.7321 4.81836 13.8326 4.68164 14.0156C4.54492 14.1987 4.48437 14.4063 4.5 14.6384L4.875 20.2098C4.89063 20.433 4.9707 20.6205 5.11523 20.7723C5.25977 20.9241 5.42969 21 5.625 21H5.68359ZM10.5 20.1429V14.5714C10.5 14.3393 10.4258 14.1384 10.2773 13.9688C10.1289 13.7991 9.95313 13.7143 9.75 13.7143C9.54687 13.7143 9.37109 13.7991 9.22266 13.9688C9.07422 14.1384 9 14.3393 9 14.5714V20.1429C9 20.375 9.07422 20.5759 9.22266 20.7455C9.37109 20.9152 9.54687 21 9.75 21C9.95313 21 10.1289 20.9152 10.2773 20.7455C10.4258 20.5759 10.5 20.375 10.5 20.1429ZM15 20.1429V14.5714C15 14.3393 14.9258 14.1384 14.7773 13.9688C14.6289 13.7991 14.4531 13.7143 14.25 13.7143C14.0469 13.7143 13.8711 13.7991 13.7227 13.9688C13.5742 14.1384 13.5 14.3393 13.5 14.5714V20.1429C13.5 20.375 13.5742 20.5759 13.7227 20.7455C13.8711 20.9152 14.0469 21 14.25 21C14.4531 21 14.6289 20.9152 14.7773 20.7455C14.9258 20.5759 15 20.375 15 20.1429ZM19.125 20.2098L19.5 14.6384C19.5156 14.4063 19.4551 14.1987 19.3184 14.0156C19.1816 13.8326 19.0117 13.7321 18.8086 13.7143C18.6055 13.6964 18.4238 13.7656 18.2637 13.9219C18.1035 14.0781 18.0156 14.2723 18 14.5045L17.625 20.0759C17.6094 20.308 17.6699 20.5156 17.8066 20.6987C17.9434 20.8817 18.1133 20.9821 18.3164 21H18.375C18.5703 21 18.7402 20.9241 18.8848 20.7723C19.0293 20.6205 19.1094 20.433 19.125 20.2098ZM5.57812 3.91071L4.48828 9.42857H2.94141L4.125 3.52232C4.27344 2.73661 4.62109 2.09598 5.16797 1.60045C5.71484 1.10491 6.33984 0.857143 7.04297 0.857143H9C9 0.625 9.07422 0.424107 9.22266 0.254464C9.37109 0.0848214 9.54687 0 9.75 0H14.25C14.4531 0 14.6289 0.0848214 14.7773 0.254464C14.9258 0.424107 15 0.625 15 0.857143H16.957C17.6602 0.857143 18.2852 1.10491 18.832 1.60045C19.3789 2.09598 19.7266 2.73661 19.875 3.52232L21.0586 9.42857H19.5117L18.4219 3.91071C18.3359 3.51786 18.1582 3.19643 17.8887 2.94643C17.6191 2.69643 17.3086 2.57143 16.957 2.57143H15C15 2.80357 14.9258 3.00446 14.7773 3.17411C14.6289 3.34375 14.4531 3.42857 14.25 3.42857H9.75C9.54687 3.42857 9.37109 3.34375 9.22266 3.17411C9.07422 3.00446 9 2.80357 9 2.57143H7.04297C6.69141 2.57143 6.38086 2.69643 6.11133 2.94643C5.8418 3.19643 5.66406 3.51786 5.57812 3.91071Z" fill="#63CE0F" />
+          </svg>
+        </button>
+        <button title='В избранное' type='button' class="product-card__in-favs-icon product-card__icon">
+          <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18.2276 1.71802C17.6747 1.17413 17.0172 0.742349 16.2929 0.44751C15.5686 0.152672 14.7918 0.000587306 14.0071 0C12.5229 0.000236995 11.0929 0.544861 10.0002 1.52604C8.90769 0.544696 7.47762 4.55985e-05 5.99338 0C5.20779 0.000798968 4.43012 0.153348 3.70511 0.448867C2.98011 0.744387 2.32209 1.17704 1.76892 1.72194C-0.590476 4.03646 -0.589474 7.65664 1.77093 9.96137L10.0002 18L18.2296 9.96137C20.59 7.65664 20.591 4.03646 18.2276 1.71802Z" fill="#63CE0F" />
+          </svg>
+        </button>
+      </aside>
+    </div>
+  </div>
+
+  <footer class="product-card__footer">
+    <p class="product-card__price _element-with-accent-point">1000 ₽</p>
+  </footer>
+</article>
+        <article class='shop-menu__product-cart product-card'>
+  <div class="product-card__body">
+    <div class="product-card__preview _contain-img">
+      <picture><source srcset="img/pc.avif" type="image/avif"><source srcset="img/pc.webp" type="image/webp"><img src="img/pc.png" loading='lazy' alt='pc1' width='560' height='560'></picture>
+    </div>
+
+    <div class="product-card__params">
+      <p class="product-card__param">NVIDIA GeForce RTX 3050</p>
+      <p class="product-card__param">NVIDIA GeForce RTX 3050</p>
+      <p class="product-card__param">NVIDIA GeForce RTX 3050</p>
+      <p class="product-card__param">NVIDIA GeForce RTX 3050</p>
+      <p class="product-card__param">NVIDIA GeForce RTX 3050</p>
+
+      <button type='button' class="product-card__make-order-btn">
+        <p>Заказать</p>
+      </button>
+
+      <aside class="product-card__buttons">
+        <button title='Сравнить' type='button' class="product-card__compare-icon product-card__icon">
+          <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.75 0C1.55109 0 1.36032 0.0790178 1.21967 0.21967C1.07902 0.360322 1 0.551088 1 0.75C1 0.948912 1.07902 1.13968 1.21967 1.28033C1.36032 1.42098 1.55109 1.5 1.75 1.5H2.91775L0.2995 8.35725C0.266801 8.44273 0.250025 8.53348 0.25 8.625C0.25 10.5577 1.69225 12 3.625 12C5.55775 12 7 10.5577 7 8.625C6.99998 8.53348 6.9832 8.44273 6.9505 8.35725L4.333 1.5H9.25V13.5H4.75C4.45453 13.5 4.16194 13.5582 3.88896 13.6713C3.61598 13.7843 3.36794 13.9501 3.15901 14.159C2.95008 14.3679 2.78434 14.616 2.67127 14.889C2.5582 15.1619 2.5 15.4545 2.5 15.75C2.5 16.0455 2.5582 16.3381 2.67127 16.611C2.78434 16.884 2.95008 17.1321 3.15901 17.341C3.36794 17.5499 3.61598 17.7157 3.88896 17.8287C4.16194 17.9418 4.45453 18 4.75 18H15.25C15.8467 18 16.419 17.7629 16.841 17.341C17.2629 16.919 17.5 16.3467 17.5 15.75C17.5 15.1533 17.2629 14.581 16.841 14.159C16.419 13.7371 15.8467 13.5 15.25 13.5H10.75V1.5H15.5755L13.0465 8.3655C13.0158 8.44858 13.0001 8.53643 13 8.625C13 10.5577 14.4423 12 16.375 12C18.3078 12 19.75 10.5577 19.75 8.625C19.7499 8.53643 19.7342 8.44858 19.7035 8.3655L17.1745 1.5H18.25C18.4489 1.5 18.6397 1.42098 18.7803 1.28033C18.921 1.13968 19 0.948912 19 0.75C19 0.551088 18.921 0.360322 18.7803 0.21967C18.6397 0.0790178 18.4489 0 18.25 0H1.75ZM3.625 3.85275L5.161 7.875H2.089L3.625 3.85275ZM14.8255 7.875L16.375 3.66975L17.9245 7.875H14.8255Z" fill="#63CE0F" />
+          </svg>
+        </button>
+        <button title='В корзину' type='button' class="product-card__in-cart-icon product-card__icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22.5 10.2857C22.9141 10.2857 23.2676 10.4531 23.5605 10.7879C23.8535 11.1228 24 11.5268 24 12C24 12.4732 23.8535 12.8772 23.5605 13.2121C23.2676 13.5469 22.9141 13.7143 22.5 13.7143H22.3242L20.9766 22.5804C20.9141 22.9911 20.7422 23.3304 20.4609 23.5982C20.1797 23.8661 19.8594 24 19.5 24H4.5C4.14063 24 3.82031 23.8661 3.53906 23.5982C3.25781 23.3304 3.08594 22.9911 3.02344 22.5804L1.67578 13.7143H1.5C1.08594 13.7143 0.732422 13.5469 0.439453 13.2121C0.146484 12.8772 0 12.4732 0 12C0 11.5268 0.146484 11.1228 0.439453 10.7879C0.732422 10.4531 1.08594 10.2857 1.5 10.2857H22.5ZM5.68359 21C5.88672 20.9821 6.05664 20.8817 6.19336 20.6987C6.33008 20.5156 6.39063 20.308 6.375 20.0759L6 14.5045C5.98437 14.2723 5.89648 14.0781 5.73633 13.9219C5.57617 13.7656 5.39453 13.6964 5.19141 13.7143C4.98828 13.7321 4.81836 13.8326 4.68164 14.0156C4.54492 14.1987 4.48437 14.4063 4.5 14.6384L4.875 20.2098C4.89063 20.433 4.9707 20.6205 5.11523 20.7723C5.25977 20.9241 5.42969 21 5.625 21H5.68359ZM10.5 20.1429V14.5714C10.5 14.3393 10.4258 14.1384 10.2773 13.9688C10.1289 13.7991 9.95313 13.7143 9.75 13.7143C9.54687 13.7143 9.37109 13.7991 9.22266 13.9688C9.07422 14.1384 9 14.3393 9 14.5714V20.1429C9 20.375 9.07422 20.5759 9.22266 20.7455C9.37109 20.9152 9.54687 21 9.75 21C9.95313 21 10.1289 20.9152 10.2773 20.7455C10.4258 20.5759 10.5 20.375 10.5 20.1429ZM15 20.1429V14.5714C15 14.3393 14.9258 14.1384 14.7773 13.9688C14.6289 13.7991 14.4531 13.7143 14.25 13.7143C14.0469 13.7143 13.8711 13.7991 13.7227 13.9688C13.5742 14.1384 13.5 14.3393 13.5 14.5714V20.1429C13.5 20.375 13.5742 20.5759 13.7227 20.7455C13.8711 20.9152 14.0469 21 14.25 21C14.4531 21 14.6289 20.9152 14.7773 20.7455C14.9258 20.5759 15 20.375 15 20.1429ZM19.125 20.2098L19.5 14.6384C19.5156 14.4063 19.4551 14.1987 19.3184 14.0156C19.1816 13.8326 19.0117 13.7321 18.8086 13.7143C18.6055 13.6964 18.4238 13.7656 18.2637 13.9219C18.1035 14.0781 18.0156 14.2723 18 14.5045L17.625 20.0759C17.6094 20.308 17.6699 20.5156 17.8066 20.6987C17.9434 20.8817 18.1133 20.9821 18.3164 21H18.375C18.5703 21 18.7402 20.9241 18.8848 20.7723C19.0293 20.6205 19.1094 20.433 19.125 20.2098ZM5.57812 3.91071L4.48828 9.42857H2.94141L4.125 3.52232C4.27344 2.73661 4.62109 2.09598 5.16797 1.60045C5.71484 1.10491 6.33984 0.857143 7.04297 0.857143H9C9 0.625 9.07422 0.424107 9.22266 0.254464C9.37109 0.0848214 9.54687 0 9.75 0H14.25C14.4531 0 14.6289 0.0848214 14.7773 0.254464C14.9258 0.424107 15 0.625 15 0.857143H16.957C17.6602 0.857143 18.2852 1.10491 18.832 1.60045C19.3789 2.09598 19.7266 2.73661 19.875 3.52232L21.0586 9.42857H19.5117L18.4219 3.91071C18.3359 3.51786 18.1582 3.19643 17.8887 2.94643C17.6191 2.69643 17.3086 2.57143 16.957 2.57143H15C15 2.80357 14.9258 3.00446 14.7773 3.17411C14.6289 3.34375 14.4531 3.42857 14.25 3.42857H9.75C9.54687 3.42857 9.37109 3.34375 9.22266 3.17411C9.07422 3.00446 9 2.80357 9 2.57143H7.04297C6.69141 2.57143 6.38086 2.69643 6.11133 2.94643C5.8418 3.19643 5.66406 3.51786 5.57812 3.91071Z" fill="#63CE0F" />
+          </svg>
+        </button>
+        <button title='В избранное' type='button' class="product-card__in-favs-icon product-card__icon">
+          <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18.2276 1.71802C17.6747 1.17413 17.0172 0.742349 16.2929 0.44751C15.5686 0.152672 14.7918 0.000587306 14.0071 0C12.5229 0.000236995 11.0929 0.544861 10.0002 1.52604C8.90769 0.544696 7.47762 4.55985e-05 5.99338 0C5.20779 0.000798968 4.43012 0.153348 3.70511 0.448867C2.98011 0.744387 2.32209 1.17704 1.76892 1.72194C-0.590476 4.03646 -0.589474 7.65664 1.77093 9.96137L10.0002 18L18.2296 9.96137C20.59 7.65664 20.591 4.03646 18.2276 1.71802Z" fill="#63CE0F" />
+          </svg>
+        </button>
+      </aside>
+    </div>
+  </div>
+
+  <footer class="product-card__footer">
+    <p class="product-card__price _element-with-accent-point">1000 ₽</p>
+  </footer>
+</article>
+        <article class='shop-menu__product-cart product-card'>
+  <div class="product-card__body">
+    <div class="product-card__preview _contain-img">
+      <picture><source srcset="img/pc.avif" type="image/avif"><source srcset="img/pc.webp" type="image/webp"><img src="img/pc.png" loading='lazy' alt='pc1' width='560' height='560'></picture>
+    </div>
+
+    <div class="product-card__params">
+      <p class="product-card__param">NVIDIA GeForce RTX 3050</p>
+      <p class="product-card__param">NVIDIA GeForce RTX 3050</p>
+      <p class="product-card__param">NVIDIA GeForce RTX 3050</p>
+      <p class="product-card__param">NVIDIA GeForce RTX 3050</p>
+      <p class="product-card__param">NVIDIA GeForce RTX 3050</p>
+
+      <button type='button' class="product-card__make-order-btn">
+        <p>Заказать</p>
+      </button>
+
+      <aside class="product-card__buttons">
+        <button title='Сравнить' type='button' class="product-card__compare-icon product-card__icon">
+          <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.75 0C1.55109 0 1.36032 0.0790178 1.21967 0.21967C1.07902 0.360322 1 0.551088 1 0.75C1 0.948912 1.07902 1.13968 1.21967 1.28033C1.36032 1.42098 1.55109 1.5 1.75 1.5H2.91775L0.2995 8.35725C0.266801 8.44273 0.250025 8.53348 0.25 8.625C0.25 10.5577 1.69225 12 3.625 12C5.55775 12 7 10.5577 7 8.625C6.99998 8.53348 6.9832 8.44273 6.9505 8.35725L4.333 1.5H9.25V13.5H4.75C4.45453 13.5 4.16194 13.5582 3.88896 13.6713C3.61598 13.7843 3.36794 13.9501 3.15901 14.159C2.95008 14.3679 2.78434 14.616 2.67127 14.889C2.5582 15.1619 2.5 15.4545 2.5 15.75C2.5 16.0455 2.5582 16.3381 2.67127 16.611C2.78434 16.884 2.95008 17.1321 3.15901 17.341C3.36794 17.5499 3.61598 17.7157 3.88896 17.8287C4.16194 17.9418 4.45453 18 4.75 18H15.25C15.8467 18 16.419 17.7629 16.841 17.341C17.2629 16.919 17.5 16.3467 17.5 15.75C17.5 15.1533 17.2629 14.581 16.841 14.159C16.419 13.7371 15.8467 13.5 15.25 13.5H10.75V1.5H15.5755L13.0465 8.3655C13.0158 8.44858 13.0001 8.53643 13 8.625C13 10.5577 14.4423 12 16.375 12C18.3078 12 19.75 10.5577 19.75 8.625C19.7499 8.53643 19.7342 8.44858 19.7035 8.3655L17.1745 1.5H18.25C18.4489 1.5 18.6397 1.42098 18.7803 1.28033C18.921 1.13968 19 0.948912 19 0.75C19 0.551088 18.921 0.360322 18.7803 0.21967C18.6397 0.0790178 18.4489 0 18.25 0H1.75ZM3.625 3.85275L5.161 7.875H2.089L3.625 3.85275ZM14.8255 7.875L16.375 3.66975L17.9245 7.875H14.8255Z" fill="#63CE0F" />
+          </svg>
+        </button>
+        <button title='В корзину' type='button' class="product-card__in-cart-icon product-card__icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22.5 10.2857C22.9141 10.2857 23.2676 10.4531 23.5605 10.7879C23.8535 11.1228 24 11.5268 24 12C24 12.4732 23.8535 12.8772 23.5605 13.2121C23.2676 13.5469 22.9141 13.7143 22.5 13.7143H22.3242L20.9766 22.5804C20.9141 22.9911 20.7422 23.3304 20.4609 23.5982C20.1797 23.8661 19.8594 24 19.5 24H4.5C4.14063 24 3.82031 23.8661 3.53906 23.5982C3.25781 23.3304 3.08594 22.9911 3.02344 22.5804L1.67578 13.7143H1.5C1.08594 13.7143 0.732422 13.5469 0.439453 13.2121C0.146484 12.8772 0 12.4732 0 12C0 11.5268 0.146484 11.1228 0.439453 10.7879C0.732422 10.4531 1.08594 10.2857 1.5 10.2857H22.5ZM5.68359 21C5.88672 20.9821 6.05664 20.8817 6.19336 20.6987C6.33008 20.5156 6.39063 20.308 6.375 20.0759L6 14.5045C5.98437 14.2723 5.89648 14.0781 5.73633 13.9219C5.57617 13.7656 5.39453 13.6964 5.19141 13.7143C4.98828 13.7321 4.81836 13.8326 4.68164 14.0156C4.54492 14.1987 4.48437 14.4063 4.5 14.6384L4.875 20.2098C4.89063 20.433 4.9707 20.6205 5.11523 20.7723C5.25977 20.9241 5.42969 21 5.625 21H5.68359ZM10.5 20.1429V14.5714C10.5 14.3393 10.4258 14.1384 10.2773 13.9688C10.1289 13.7991 9.95313 13.7143 9.75 13.7143C9.54687 13.7143 9.37109 13.7991 9.22266 13.9688C9.07422 14.1384 9 14.3393 9 14.5714V20.1429C9 20.375 9.07422 20.5759 9.22266 20.7455C9.37109 20.9152 9.54687 21 9.75 21C9.95313 21 10.1289 20.9152 10.2773 20.7455C10.4258 20.5759 10.5 20.375 10.5 20.1429ZM15 20.1429V14.5714C15 14.3393 14.9258 14.1384 14.7773 13.9688C14.6289 13.7991 14.4531 13.7143 14.25 13.7143C14.0469 13.7143 13.8711 13.7991 13.7227 13.9688C13.5742 14.1384 13.5 14.3393 13.5 14.5714V20.1429C13.5 20.375 13.5742 20.5759 13.7227 20.7455C13.8711 20.9152 14.0469 21 14.25 21C14.4531 21 14.6289 20.9152 14.7773 20.7455C14.9258 20.5759 15 20.375 15 20.1429ZM19.125 20.2098L19.5 14.6384C19.5156 14.4063 19.4551 14.1987 19.3184 14.0156C19.1816 13.8326 19.0117 13.7321 18.8086 13.7143C18.6055 13.6964 18.4238 13.7656 18.2637 13.9219C18.1035 14.0781 18.0156 14.2723 18 14.5045L17.625 20.0759C17.6094 20.308 17.6699 20.5156 17.8066 20.6987C17.9434 20.8817 18.1133 20.9821 18.3164 21H18.375C18.5703 21 18.7402 20.9241 18.8848 20.7723C19.0293 20.6205 19.1094 20.433 19.125 20.2098ZM5.57812 3.91071L4.48828 9.42857H2.94141L4.125 3.52232C4.27344 2.73661 4.62109 2.09598 5.16797 1.60045C5.71484 1.10491 6.33984 0.857143 7.04297 0.857143H9C9 0.625 9.07422 0.424107 9.22266 0.254464C9.37109 0.0848214 9.54687 0 9.75 0H14.25C14.4531 0 14.6289 0.0848214 14.7773 0.254464C14.9258 0.424107 15 0.625 15 0.857143H16.957C17.6602 0.857143 18.2852 1.10491 18.832 1.60045C19.3789 2.09598 19.7266 2.73661 19.875 3.52232L21.0586 9.42857H19.5117L18.4219 3.91071C18.3359 3.51786 18.1582 3.19643 17.8887 2.94643C17.6191 2.69643 17.3086 2.57143 16.957 2.57143H15C15 2.80357 14.9258 3.00446 14.7773 3.17411C14.6289 3.34375 14.4531 3.42857 14.25 3.42857H9.75C9.54687 3.42857 9.37109 3.34375 9.22266 3.17411C9.07422 3.00446 9 2.80357 9 2.57143H7.04297C6.69141 2.57143 6.38086 2.69643 6.11133 2.94643C5.8418 3.19643 5.66406 3.51786 5.57812 3.91071Z" fill="#63CE0F" />
+          </svg>
+        </button>
+        <button title='В избранное' type='button' class="product-card__in-favs-icon product-card__icon">
+          <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18.2276 1.71802C17.6747 1.17413 17.0172 0.742349 16.2929 0.44751C15.5686 0.152672 14.7918 0.000587306 14.0071 0C12.5229 0.000236995 11.0929 0.544861 10.0002 1.52604C8.90769 0.544696 7.47762 4.55985e-05 5.99338 0C5.20779 0.000798968 4.43012 0.153348 3.70511 0.448867C2.98011 0.744387 2.32209 1.17704 1.76892 1.72194C-0.590476 4.03646 -0.589474 7.65664 1.77093 9.96137L10.0002 18L18.2296 9.96137C20.59 7.65664 20.591 4.03646 18.2276 1.71802Z" fill="#63CE0F" />
+          </svg>
+        </button>
+      </aside>
+    </div>
+  </div>
+
+  <footer class="product-card__footer">
+    <p class="product-card__price _element-with-accent-point">1000 ₽</p>
+  </footer>
+</article>
+      </section>
+    </div>
+
+    <svg id='shop-menu-center-decor' class='page-decor' width="581" height="568" viewBox="0 0 581 568" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g filter="url(#filter0_f_116_10)">
+        <path d="M469.021 100.29C476.197 99.378 481.937 106.152 479.86 113.081L375.77 460.338C373.491 467.939 363.691 469.985 358.561 463.931L103.02 162.357C97.8902 156.302 101.517 146.972 109.389 145.972L469.021 100.29Z" fill="#7ED23C" />
+      </g>
+      <defs>
+        <filter id="filter0_f_116_10" x="0.637695" y="0.206787" width="579.653" height="567.264" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+          <feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_116_10" />
+        </filter>
+      </defs>
+    </svg>
+  </section>
+
+  <section class='accessories _decor-block'>
+    <div class='accessories__body _container _block-padding'>
+      <h2 tabindex='0' class='accessories__title _title-margin-bottom'>Аксессуары</h2>
+
+      <div class="accessories__grid">
+        <a href='#' id='top-left-block' class='category category_green-bg'>
+          <div class="category__preview _contain-img">
+            <picture><source srcset="img/mouse.avif" type="image/avif"><source srcset="img/mouse.webp" type="image/webp"><img src='img/mouse.png' alt='category mouses'></picture>
+          </div>
+
+          <h3 tabindex='0' class='category__title'>Мыши</h3>
+        </a>
+        <a href='#' id='bottom-left-block' class='category category_green-bg'>
+          <div class="category__preview _contain-img">
+            <picture><source srcset="img/keyboard.avif" type="image/avif"><source srcset="img/keyboard.webp" type="image/webp"><img src='img/keyboard.png' alt='category keyboards'></picture>
+          </div>
+
+          <h3 tabindex='0' class='category__title'>Клавиатуры</h3>
+        </a>
+        <a href='#' id='big-block' class='category category_big-card _element-with-accent-point'>
+          <h3 tabindex='0' class='category__title'>Наушники</h3>
+
+          <div class="category__preview _contain-img">
+            <picture><source srcset="img/headphones-card.avif" type="image/avif"><source srcset="img/headphones-card.webp" type="image/webp"><img src='img/headphones-card.png' alt='category keyboards'></picture>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <svg id='accessories-top-right-decor' class='page-decor' width="581" height="568" viewBox="0 0 581 568" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g filter="url(#filter0_f_116_6)">
+        <path d="M469.021 100.29C476.197 99.378 481.937 106.152 479.86 113.081L375.77 460.338C373.491 467.939 363.691 469.985 358.561 463.931L103.02 162.357C97.8902 156.302 101.517 146.972 109.389 145.972L469.021 100.29Z" fill="#7ED23C" />
+      </g>
+      <defs>
+        <filter id="filter0_f_116_6" x="0.637695" y="0.206787" width="579.653" height="567.264" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+          <feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_116_6" />
+        </filter>
+      </defs>
+    </svg>
+  </section>
+
+  <section class='headphones _decor-block'>
+    <div class='headphones__body _container _block-padding'>
+      <h2 tabindex='0' class='headphones__title'>Наушники</h2>
+
+      <div class="headphones__products">
+        <article class='product-card-mini '>
+  <a href='#' class="product-card-mini__image _contain-img">
+    <picture><source srcset="img/headphones.avif" type="image/avif"><source srcset="img/headphones.webp" type="image/webp"><img src='img/headphones.png' alt='name'></picture>
+  </a>
+
+  <p class="product-card-mini__price _element-with-accent-point">
+    3000 ₽
+  </p>
+</article>
+        <article class='product-card-mini '>
+  <a href='#' class="product-card-mini__image _contain-img">
+    <picture><source srcset="img/headphones.avif" type="image/avif"><source srcset="img/headphones.webp" type="image/webp"><img src='img/headphones.png' alt='name'></picture>
+  </a>
+
+  <p class="product-card-mini__price _element-with-accent-point">
+    3000 ₽
+  </p>
+</article>
+        <article class='product-card-mini '>
+  <a href='#' class="product-card-mini__image _contain-img">
+    <picture><source srcset="img/headphones.avif" type="image/avif"><source srcset="img/headphones.webp" type="image/webp"><img src='img/headphones.png' alt='name'></picture>
+  </a>
+
+  <p class="product-card-mini__price _element-with-accent-point">
+    3000 ₽
+  </p>
+</article>
+        <article class='product-card-mini '>
+  <a href='#' class="product-card-mini__image _contain-img">
+    <picture><source srcset="img/headphones.avif" type="image/avif"><source srcset="img/headphones.webp" type="image/webp"><img src='img/headphones.png' alt='name'></picture>
+  </a>
+
+  <p class="product-card-mini__price _element-with-accent-point">
+    3000 ₽
+  </p>
+</article>
+        <article class='product-card-mini '>
+  <a href='#' class="product-card-mini__image _contain-img">
+    <picture><source srcset="img/headphones.avif" type="image/avif"><source srcset="img/headphones.webp" type="image/webp"><img src='img/headphones.png' alt='name'></picture>
+  </a>
+
+  <p class="product-card-mini__price _element-with-accent-point">
+    3000 ₽
+  </p>
+</article>
+        <article class='product-card-mini '>
+  <a href='#' class="product-card-mini__image _contain-img">
+    <picture><source srcset="img/headphones.avif" type="image/avif"><source srcset="img/headphones.webp" type="image/webp"><img src='img/headphones.png' alt='name'></picture>
+  </a>
+
+  <p class="product-card-mini__price _element-with-accent-point">
+    3000 ₽
+  </p>
+</article>
+        <article class='product-card-mini '>
+  <a href='#' class="product-card-mini__image _contain-img">
+    <picture><source srcset="img/headphones.avif" type="image/avif"><source srcset="img/headphones.webp" type="image/webp"><img src='img/headphones.png' alt='name'></picture>
+  </a>
+
+  <p class="product-card-mini__price _element-with-accent-point">
+    3000 ₽
+  </p>
+</article>
+        <article class='product-card-mini '>
+  <a href='#' class="product-card-mini__image _contain-img">
+    <picture><source srcset="img/headphones.avif" type="image/avif"><source srcset="img/headphones.webp" type="image/webp"><img src='img/headphones.png' alt='name'></picture>
+  </a>
+
+  <p class="product-card-mini__price _element-with-accent-point">
+    3000 ₽
+  </p>
+</article>
+        <article class='product-card-mini product-card-mini_hidden'>
+  <a href='#' class="product-card-mini__image _contain-img">
+    <picture><source srcset="img/headphones.avif" type="image/avif"><source srcset="img/headphones.webp" type="image/webp"><img src='img/headphones.png' alt='name'></picture>
+  </a>
+
+  <p class="product-card-mini__price _element-with-accent-point">
+    3000 ₽
+  </p>
+</article>
+        <article class='product-card-mini product-card-mini_hidden'>
+  <a href='#' class="product-card-mini__image _contain-img">
+    <picture><source srcset="img/headphones.avif" type="image/avif"><source srcset="img/headphones.webp" type="image/webp"><img src='img/headphones.png' alt='name'></picture>
+  </a>
+
+  <p class="product-card-mini__price _element-with-accent-point">
+    3000 ₽
+  </p>
+</article>
+        <article class='product-card-mini product-card-mini_hidden'>
+  <a href='#' class="product-card-mini__image _contain-img">
+    <picture><source srcset="img/headphones.avif" type="image/avif"><source srcset="img/headphones.webp" type="image/webp"><img src='img/headphones.png' alt='name'></picture>
+  </a>
+
+  <p class="product-card-mini__price _element-with-accent-point">
+    3000 ₽
+  </p>
+</article>
+      </div>
+
+      <button type='button' class='spoiler__btn headphones__show-more-btn'>
+        <span>Показать ещё</span>
+
+        <svg width="1em" viewBox="0 0 32 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4.57143 0L16 10.625L27.4286 0L32 2.125L16 17L0 2.125L4.57143 0Z" fill="#7ED23C" />
+        </svg>
+      </button>
+    </div>
+
+    <svg id='headphones-center-decor' class='page-decor' width="581" height="568" viewBox="0 0 581 568" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g filter="url(#filter0_f_116_12)">
+        <path d="M469.021 100.29C476.197 99.378 481.937 106.152 479.86 113.081L375.77 460.338C373.491 467.939 363.691 469.985 358.561 463.931L103.02 162.357C97.8902 156.302 101.517 146.972 109.389 145.972L469.021 100.29Z" fill="#7ED23C" />
+      </g>
+      <defs>
+        <filter id="filter0_f_116_12" x="0.637695" y="0.206909" width="579.653" height="567.264" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+          <feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_116_12" />
+        </filter>
+      </defs>
+    </svg>
+    <svg id='headphones-bottom-right-decor' class='page-decor' width="334" height="568" viewBox="0 0 334 568" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g filter="url(#filter0_f_116_13)">
+        <path d="M469.021 100.29C476.197 99.378 481.937 106.152 479.86 113.081L375.77 460.338C373.491 467.939 363.691 469.985 358.561 463.931L103.02 162.357C97.8902 156.302 101.517 146.972 109.389 145.972L469.021 100.29Z" fill="#7ED23C" />
+      </g>
+      <defs>
+        <filter id="filter0_f_116_13" x="0.637695" y="0.206848" width="579.653" height="567.264" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+          <feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_116_13" />
+        </filter>
+      </defs>
+    </svg>
+  </section>
+
+  <section class='our-partners _decor-block'>
+    <div class='our-partners__body _container _block-padding'>
+      <h2 tabindex='0' class='our-partners__title'>Наши партеры</h2>
+
+      <div class="our-partners__slider-block">
+        <div class='swiper our-partners__slider'>
+          <div class='swiper-wrapper'>
+            <div class='swiper-slide our-partners__slide _contain-img'>
+              <picture><source srcset="img/partner-1.avif" type="image/avif"><source srcset="img/partner-1.webp" type="image/webp"><img src='img/partner-1.png' alt='alt'></picture>
+            </div>
+            <div class='swiper-slide our-partners__slide _contain-img'>
+              <picture><source srcset="img/partner-2.avif" type="image/avif"><source srcset="img/partner-2.webp" type="image/webp"><img src='img/partner-2.png' alt='alt'></picture>
+            </div>
+            <div class='swiper-slide our-partners__slide _contain-img'>
+              <picture><source srcset="img/partner-1.avif" type="image/avif"><source srcset="img/partner-1.webp" type="image/webp"><img src='img/partner-1.png' alt='alt'></picture>
+            </div>
+            <div class='swiper-slide our-partners__slide _contain-img'>
+              <picture><source srcset="img/partner-2.avif" type="image/avif"><source srcset="img/partner-2.webp" type="image/webp"><img src='img/partner-2.png' alt='alt'></picture>
+            </div>
+            <div class='swiper-slide our-partners__slide _contain-img'>
+              <picture><source srcset="img/partner-2.avif" type="image/avif"><source srcset="img/partner-2.webp" type="image/webp"><img src='img/partner-2.png' alt='alt'></picture>
+            </div>
+            <div class='swiper-slide our-partners__slide _contain-img'>
+              <picture><source srcset="img/partner-2.avif" type="image/avif"><source srcset="img/partner-2.webp" type="image/webp"><img src='img/partner-2.png' alt='alt'></picture>
+            </div>
+            <div class='swiper-slide our-partners__slide _contain-img'>
+              <picture><source srcset="img/partner-2.avif" type="image/avif"><source srcset="img/partner-2.webp" type="image/webp"><img src='img/partner-2.png' alt='alt'></picture>
+            </div>
+          </div>
+        </div>
+
+        <button type='button' class='our-partners__next-btn'>
+          <svg width="83" height="82" viewBox="0 0 83 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M25.2024 61.6283L45.7959 41.3771L25.2024 21.1259L29.3211 13.0255L58.152 41.3771L29.3211 69.7288L25.2024 61.6283Z" fill="#7ED23C" />
+            <path d="M58.259 41.3771L29.3746 12.9729L25.0955 21.3889L45.4215 41.3771L25.0955 61.8913C26.3436 64.5213 28.9467 69.7814 29.3746 69.7814C29.8025 69.7814 48.8092 50.8452 58.259 41.3771Z" stroke="black" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <svg id='our-partners-left-decor' class='page-decor' width="557" height="568" viewBox="0 0 557 568" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g filter="url(#filter0_f_116_14)">
+        <path d="M445.021 100.29C452.197 99.378 457.937 106.152 455.86 113.081L351.77 460.338C349.491 467.939 339.691 469.985 334.561 463.931L79.0202 162.357C73.8902 156.302 77.5173 146.972 85.3894 145.972L445.021 100.29Z" fill="#7ED23C" />
+      </g>
+      <defs>
+        <filter id="filter0_f_116_14" x="-23.3623" y="0.206848" width="579.653" height="567.264" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+          <feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_116_14" />
+        </filter>
+      </defs>
+    </svg>
+  </section>
+
+  <section class='product-overview _decor-block'>
+    <div class='product-overview__body _container _block-padding'>
+      <h2 tabindex='0' class='product-overview__title _title-right'>Обзор на товар</h2>
+
+      <aside class="product-overview__socials">
+        <a class='product-overview__social-img' href='#' target='_blank' rel='noopener noreferrer'>
+          <picture><source srcset="img/icons/twitter.avif" type="image/avif"><source srcset="img/icons/twitter.webp" type="image/webp"><img src="img/icons/twitter.png" loading='lazy' alt='twitter' width=91 height=91></picture>
+        </a>
+        <a id='fb-social-icon' class='product-overview__social-img' href='#' target='_blank' rel='noopener noreferrer'>
+          <picture><source srcset="img/icons/fb.avif" type="image/avif"><source srcset="img/icons/fb.webp" type="image/webp"><img class='product-overview__social-img' src="img/icons/fb.png" loading='lazy' alt='twitter' width=91 height=91></picture>
+        </a>
+        <a class='product-overview__social-img' href='#' target='_blank' rel='noopener noreferrer'>
+          <picture><source srcset="img/icons/inst.avif" type="image/avif"><source srcset="img/icons/inst.webp" type="image/webp"><img src="img/icons/inst.png" loading='lazy' alt='twitter' width=91 height=91></picture>
+        </a>
+        <a id='youtube-social-icon' class='product-overview__social-img' href='#' target='_blank' rel='noopener noreferrer'>
+          <picture><source srcset="img/icons/youtube.avif" type="image/avif"><source srcset="img/icons/youtube.webp" type="image/webp"><img src="img/icons/youtube.png" loading='lazy' alt='twitter' width=91 height=91></picture>
+        </a>
+        <a class='product-overview__social-img' href='#' target='_blank' rel='noopener noreferrer'>
+          <picture><source srcset="img/icons/pin.avif" type="image/avif"><source srcset="img/icons/pin.webp" type="image/webp"><img src="img/icons/pin.png" loading='lazy' alt='twitter' width=91 height=91></picture>
+        </a>
+      </aside>
+
+      <div class="product-overview__video">
+        <iframe width="641" height="361" src="https://www.youtube.com/embed/xme-UQGJxJg" title="The Battle Continues! (TNO Remix) - Ayden George" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading='lazy'></iframe>
+      </div>
+    </div>
+
+    <svg id='product-overview-center-decor' class='page-decor' width="481" height="468" viewBox="0 0 481 468" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g filter="url(#filter0_f_116_15)">
+        <path d="M419.021 50.2896C426.197 49.378 431.937 56.152 429.86 63.0812L325.77 410.338C323.491 417.939 313.691 419.985 308.561 413.931L53.0202 112.357C47.8902 106.302 51.5173 96.9716 59.3894 95.9716L419.021 50.2896Z" fill="#7ED23C" />
+      </g>
+      <defs>
+        <filter id="filter0_f_116_15" x="0.637695" y="0.206848" width="479.653" height="467.264" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+          <feGaussianBlur stdDeviation="25" result="effect1_foregroundBlur_116_15" />
+        </filter>
+      </defs>
+    </svg>
+
+  </section>
+
+  <section class='our-branches _decor-block'>
+    <div class='our-branches__body _container _block-padding'>
+      <h2 tabindex='0' class='our-branches__title'>Наши филиалы</h2>
+      <p class="our-branches__location-name">Москва, Милютинский переулок, 13 строение 1</p>
+
+      <iframe class='our-branches__map' src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae68a985695eb75c5d2f0798b3eddc39f9fc78e523248b5014a1186fc5bf853ad&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+    </div>
+
+    <svg id='our-branches-left-decor' class='page-decor' width="581" height="568" viewBox="0 0 581 568" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g filter="url(#filter0_f_116_16)">
+        <path d="M469.021 100.29C476.197 99.378 481.937 106.152 479.86 113.081L375.77 460.338C373.491 467.939 363.691 469.985 358.561 463.931L103.02 162.357C97.8902 156.302 101.517 146.972 109.389 145.972L469.021 100.29Z" fill="#7ED23C" />
+      </g>
+      <defs>
+        <filter id="filter0_f_116_16" x="0.637695" y="0.206909" width="579.653" height="567.264" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+          <feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_116_16" />
+        </filter>
+      </defs>
+    </svg>
+
+  </section>
+
+  <aside id='cart' class='modal-window modal-window_block'>
+  <div class='modal-window__body'>
+    <button title='Закрыть окно' class='cart__closer modal-window__closer modal-window__closer-btn modal-window__closer-animation' type='button'>
+      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M29 29L1 1M29 1L1 29" stroke="#646464" stroke-width="2" stroke-linecap="round" />
+      </svg>
+    </button>
+
+    <section class='cart _container modal-window__inner'>
+      <div class="cart__body">
+        <h4 class="cart__title modal-window__heading">Корзина</h4>
+
+        <div class="cart__items">
+          <div class="cart__item cart-item">
+            <div class="cart-item__preview _contain-img">
+              <picture><source srcset="img/cart-pc.avif" type="image/avif"><source srcset="img/cart-pc.webp" type="image/webp"><img src='img/cart-pc.png' loading='lazy' alt='cart-item-name'></picture>
+            </div>
+
+            <p class="cart-item__name">Gaming pc 3000</p>
+            <p class="cart-item__price">152 000 ₽</p>
+
+            <div class="cart-item__counter counter">
+              <button class='counter__counter-decrase' title="уменьшить количество" type='button'>-</button>
+              <input id="countOfProduct" class='counter__counter-input' type='number' step='1' min='1' name='countOfProduct' value='1'>
+              <button class='counter__counter-incrase' title="уменьшить количество" type='button'>+</button>
+            </div>
+
+            <button title='Убрать элемент' class='cart-item__closer modal-window__closer-animation' type='button'>
+              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M29 29L1 1M29 1L1 29" stroke="#646464" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </button>
+          </div>
+          <div class="cart__item cart-item">
+            <div class="cart-item__preview _contain-img">
+              <picture><source srcset="img/cart-pc.avif" type="image/avif"><source srcset="img/cart-pc.webp" type="image/webp"><img src='img/cart-pc.png' loading='lazy' alt='cart-item-name'></picture>
+            </div>
+
+            <p class="cart-item__name">Gaming pc 3000</p>
+            <p class="cart-item__price">152 000 ₽</p>
+
+            <div class="cart-item__counter counter">
+              <button class='counter__counter-decrase' title="Уменьшить количество" type='button'>-</button>
+              <input class='counter__counter-input' type='number' step='1' min='1' name='countOfProduct' value='1'>
+              <button class='counter__counter-incrase' title="Увеличить количество" type='button'>+</button>
+            </div>
+
+            <button title='Убрать элемент' class='cart-item__closer modal-window__closer-animation' type='button'>
+              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M29 29L1 1M29 1L1 29" stroke="#646464" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <p class='cart__general-price'>Общая стоимость: <span>100500 ₽</span></p>
+
+        <footer class='cart__footer'>
+          <button type='button' class='cart__by-installments-btn'>В рассрочку</button>
+          <button data-open-modal-id='order' type='button' class='cart__make-order-btn modal-button'>Заказать</button>
+        </footer>
+      </div>
+    </section>
+
+    <svg id='cart-top-left-decor' class='page-decor' width="378" height="362" viewBox="0 0 378 362" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g filter="url(#filter0_f_116_17)">
+        <path d="M192.619 -112.028C198.546 -116.174 206.779 -112.85 208.166 -105.75L277.643 250.052C279.164 257.84 271.443 264.212 264.084 261.241L-102.446 113.241C-109.804 110.27 -110.936 100.323 -104.434 95.7742L192.619 -112.028Z" fill="#7ED23C" />
+      </g>
+      <defs>
+        <filter id="filter0_f_116_17" x="-208.703" y="-213.842" width="586.54" height="575.827" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+          <feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_116_17" />
+        </filter>
+      </defs>
+    </svg>
+    <svg id='cart-bottom-right-decor' class='page-decor' width="318" height="333" viewBox="0 0 318 333" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g filter="url(#filter0_f_116_18)">
+        <path d="M101.425 114.755C98.5647 108.111 103.488 100.722 110.721 100.803L473.22 104.842C481.155 104.93 485.831 113.782 481.431 120.386L262.25 449.336C257.85 455.94 247.88 455.034 244.743 447.745L101.425 114.755Z" fill="#7ED23C" />
+      </g>
+      <defs>
+        <filter id="filter0_f_116_18" x="0.598694" y="0.802246" width="582.526" height="552.99" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+          <feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_116_18" />
+        </filter>
+      </defs>
+    </svg>
+  </div>
+</aside>
+
+<aside id='order' class='modal-window'>
+  <button title='Закрыть окно' class='order__closer modal-window__closer modal-window__closer-btn modal-window__closer-animation' type='button'>
+    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M29 29L1 1M29 1L1 29" stroke="#646464" stroke-width="2" stroke-linecap="round" />
+    </svg>
+  </button>
+
+  <section class='order _container modal-window__inner'>
+    <h4 class="order__title cart__title modal-window__heading">Оформить заказ</h4>
+
+    <form id='order-form' class='order-form' action='#'>
+      <fieldset class='order-form__body'>
+        <input class='order-form__name' type='text' name='user-name' placeholder='Ваше полное имя' required>
+        <input class='order-form__tel' type='tel' name='user-phone' placeholder='Номер телефона' required>
+        <input class='order-form__email' type='email' name='user-email' placeholder='E-main' required>
+        <textarea class='order-form__textarea' name='user-comments' id='textarea' placeholder='Комментарии к заказу' style='resize: none;'></textarea>
+
+        <input class='_element-with-toggle-point _element-with-toggle-point_reverce' type='checkbox' id='delivery' name='delivery' />
+        <label class='order-form__delivery' for='delivery'>Доставка</label>
+
+
+        <footer class='order-form__footer'>
+          <input class='_element-with-toggle-point' type='checkbox' id='personal-data' name='user-personal-data' />
+          <label class='order-form__personal-data' for='personal-data'>Я согласен на обработку персональных данных</label>
+
+          <button class='order-form__submit modal-button' type='submit'>Оплатить</button>
+        </footer>
+      </fieldset>
+
+      <div id='errorsContainer' class='order-form__errors'>
+      </div>
+    </form>
+  </section>
+
+  <svg id='order-right-decor' class='page-decor' width="362" height="554" viewBox="0 0 362 554" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g filter="url(#filter0_f_116_19)">
+      <path d="M101.425 114.755C98.5647 108.111 103.488 100.722 110.721 100.803L473.22 104.842C481.155 104.93 485.831 113.782 481.431 120.386L262.25 449.336C257.85 455.94 247.88 455.034 244.743 447.745L101.425 114.755Z" fill="#7ED23C" />
+    </g>
+    <defs>
+      <filter id="filter0_f_116_19" x="0.598694" y="0.802002" width="582.527" height="552.99" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+        <feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_116_19" />
+      </filter>
+    </defs>
+  </svg>
+</aside>
+
+<aside id='thanks' class='modal-window'>
+  <button title='Закрыть окно' class='thanks__closer modal-window__closer modal-window__closer-btn modal-window__closer-animation' type='button'>
+    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M29 29L1 1M29 1L1 29" stroke="#646464" stroke-width="2" stroke-linecap="round" />
+    </svg>
+  </button>
+
+  <div class='thanks _container modal-window__inner'>
+    <p class="thanks__text">Спасибо за заказ!</p>
+    <button class='thanks__close modal-button modal-window__closer' type='button'>На главную!</button>
+  </div>
+</aside>
+
+  <footer class='footer'>
+  <div class='footer__body _container'>
+    <ul class='contacts'>
+      <li class="contacts__block">
+        <h5 class="contacts__title _extra-bold">Для партнеров</h5>
+        <a href='mailto:someEmail@gmail.com' class="contacts__mail _medium">someEmail@gmail.com</a>
+        <a href='tel:+88005553535' class="contacts__tel _medium">88005553535</a>
+      </li>
+      <li class="contacts__block">
+        <h5 class="contacts__title _extra-bold">Для поставщиков</h5>
+        <a href='mailto:someEmail@gmail.com' class="contacts__mail _medium">someEmail@gmail.com</a>
+        <a href='tel:+88005553535' class="contacts__tel _medium">88005553535</a>
+      </li>
+      <li class="contacts__block">
+        <h5 class="contacts__title _extra-bold">Связь</h5>
+        <a href='mailto:someEmail@gmail.com' class="contacts__mail _medium">someEmail@gmail.com</a>
+        <a href='tel:+88005553535' class="contacts__tel _medium">88005553535</a>
+      </li>
+    </ul>
+    <a href='#' class='footer__logo _contain-img' title='На главную страницу'>
+      <img src="img/logo.svg" loading='lazy' alt='Logo' width=420 height=171>
+    </a>
+  </div>
+</footer>
+</body>
+
+</html>
+<!-- Made in Russia, with ❤, by Ivan Ulyanov. -->

@@ -1,0 +1,467 @@
+<%- include('components/_headContent.htm', {
+  lang: 'ru',
+  title: 'PCMarketplace',
+
+  modules: {
+  justValidate: true,
+  swiper: true,
+  burgerMenu: true,
+  formStyles: true,
+  sidebar: false,
+  spoiler: true,
+  elementModal: false,
+  modalWindow: true,
+  },
+
+  styles: [
+    'index',
+  ],
+  scripts: [
+    // To connect scripts, add the name of the attached file and the necessary attributes here.
+    { name: 'generalScripts', attrs: 'defer' },
+  ],
+}) %>
+
+<body>
+  <svg id='body-top-left-decor' class='page-decor' width="231" height="285" viewBox="0 0 231 285" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g filter="url(#filter0_f_116_20)">
+      <path d="M119.021 -182.71C126.197 -183.622 131.937 -176.848 129.86 -169.919L25.7696 177.338C23.4911 184.939 13.6914 186.985 8.56132 180.931L-246.98 -120.643C-252.11 -126.698 -248.483 -136.028 -240.611 -137.028L119.021 -182.71Z" fill="#7ED23C" />
+    </g>
+    <defs>
+      <filter id="filter0_f_116_20" x="-349.362" y="-282.793" width="579.653" height="567.264" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+        <feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_116_20" />
+      </filter>
+    </defs>
+  </svg>
+
+  <%- include('_header.htm') %>
+
+  <section class='slider'>
+    <div class='slider__body _container'>
+      <div class='swiper slider__swiper'>
+        <div class='swiper-wrapper'>
+          <a href='#' class='swiper-slide slider__slide _cover-img'>
+            <img src="img/pc-1.jpg" alt='Title' width='3180' height='1108'>
+          </a>
+          <a href='#' class='swiper-slide slider__slide _cover-img'>
+            <img src="img/slider-2.jpg" loading='lazy' alt='Title' width='3840' height='2160'>
+          </a>
+          <a href='#' class='swiper-slide slider__slide _cover-img'>
+            <img src="img/slider-3.jpg" loading='lazy' alt='Title' width='2560' height='1440'>
+          </a>
+        </div>
+      </div>
+
+      <div id='hero-slider-pag' class='slider__pagination swiper-pagination'></div>
+
+      <div class='slider__prev-btn'>
+        <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M21 0C15.4305 0 10.089 2.21249 6.15076 6.15076C2.21249 10.089 0 15.4305 0 21C0 26.5695 2.21249 31.911 6.15076 35.8492C10.089 39.7875 15.4305 42 21 42C26.5695 42 31.911 39.7875 35.8492 35.8492C39.7875 31.911 42 26.5695 42 21C42 15.4305 39.7875 10.089 35.8492 6.15076C31.911 2.21249 26.5695 0 21 0V0ZM30.1875 19.6875C30.5356 19.6875 30.8694 19.8258 31.1156 20.0719C31.3617 20.3181 31.5 20.6519 31.5 21C31.5 21.3481 31.3617 21.6819 31.1156 21.9281C30.8694 22.1742 30.5356 22.3125 30.1875 22.3125H14.9809L20.6168 27.9457C20.7388 28.0678 20.8356 28.2127 20.9016 28.3721C20.9677 28.5315 21.0017 28.7024 21.0017 28.875C21.0017 29.0476 20.9677 29.2185 20.9016 29.3779C20.8356 29.5373 20.7388 29.6822 20.6168 29.8043C20.4947 29.9263 20.3498 30.0231 20.1904 30.0891C20.031 30.1552 19.8601 30.1892 19.6875 30.1892C19.5149 30.1892 19.344 30.1552 19.1846 30.0891C19.0252 30.0231 18.8803 29.9263 18.7582 29.8043L10.8832 21.9293C10.761 21.8073 10.664 21.6625 10.5979 21.503C10.5317 21.3436 10.4977 21.1726 10.4977 21C10.4977 20.8274 10.5317 20.6564 10.5979 20.497C10.664 20.3375 10.761 20.1927 10.8832 20.0707L18.7582 12.1957C19.0047 11.9493 19.339 11.8108 19.6875 11.8108C20.036 11.8108 20.3703 11.9493 20.6168 12.1957C20.8632 12.4422 21.0017 12.7765 21.0017 13.125C21.0017 13.4735 20.8632 13.8078 20.6168 14.0543L14.9809 19.6875H30.1875Z" fill="black" />
+        </svg>
+      </div>
+      <div class='slider__next-btn'>
+        <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_42_355)">
+            <path d="M21 0C26.5695 0 31.911 2.21249 35.8492 6.15076C39.7875 10.089 42 15.4305 42 21C42 26.5695 39.7875 31.911 35.8492 35.8492C31.911 39.7875 26.5695 42 21 42C15.4305 42 10.089 39.7875 6.15076 35.8492C2.21249 31.911 0 26.5695 0 21C0 15.4305 2.21249 10.089 6.15076 6.15076C10.089 2.21249 15.4305 0 21 0V0ZM11.8125 19.6875C11.4644 19.6875 11.1306 19.8258 10.8844 20.0719C10.6383 20.3181 10.5 20.6519 10.5 21C10.5 21.3481 10.6383 21.6819 10.8844 21.9281C11.1306 22.1742 11.4644 22.3125 11.8125 22.3125H27.0191L21.3832 27.9457C21.2612 28.0678 21.1644 28.2127 21.0984 28.3721C21.0323 28.5315 20.9983 28.7024 20.9983 28.875C20.9983 29.0476 21.0323 29.2185 21.0984 29.3779C21.1644 29.5373 21.2612 29.6822 21.3832 29.8043C21.5053 29.9263 21.6502 30.0231 21.8096 30.0891C21.969 30.1552 22.1399 30.1892 22.3125 30.1892C22.4851 30.1892 22.656 30.1552 22.8154 30.0891C22.9748 30.0231 23.1197 29.9263 23.2418 29.8043L31.1168 21.9293C31.239 21.8073 31.336 21.6625 31.4021 21.503C31.4683 21.3436 31.5023 21.1726 31.5023 21C31.5023 20.8274 31.4683 20.6564 31.4021 20.497C31.336 20.3375 31.239 20.1927 31.1168 20.0707L23.2418 12.1957C23.1197 12.0737 22.9748 11.9769 22.8154 11.9109C22.656 11.8448 22.4851 11.8108 22.3125 11.8108C22.1399 11.8108 21.969 11.8448 21.8096 11.9109C21.6502 11.9769 21.5053 12.0737 21.3832 12.1957C21.2612 12.3178 21.1644 12.4627 21.0984 12.6221C21.0323 12.7815 20.9983 12.9524 20.9983 13.125C20.9983 13.2976 21.0323 13.4685 21.0984 13.6279C21.1644 13.7873 21.2612 13.9322 21.3832 14.0543L27.0191 19.6875H11.8125Z" fill="black" />
+          </g>
+          <defs>
+            <clipPath id="clip0_42_355">
+              <rect width="42" height="42" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+      </div>
+    </div>
+
+    <svg id='body-right-decor' class='page-decor' width="458" height="568" viewBox="0 0 458 568" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g filter="url(#filter0_f_116_2)">
+        <path d="M469.021 100.29C476.197 99.378 481.937 106.152 479.86 113.081L375.77 460.338C373.491 467.939 363.691 469.985 358.561 463.931L103.02 162.357C97.8902 156.302 101.517 146.972 109.389 145.972L469.021 100.29Z" fill="#7ED23C" />
+      </g>
+      <defs>
+        <filter id="filter0_f_116_2" x="0.637695" y="0.207031" width="579.653" height="567.264" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+          <feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_116_2" />
+        </filter>
+      </defs>
+    </svg>
+  </section>
+
+  <section class='pick-up _decor-block'>
+    <div class='pick-up__body _container'>
+      <h1 tabindex='0' class='pick-up__title _title-margin-bottom'>Подобрать ПК под себя</h1>
+      <p class='pick-up__subtitle'>В какие игры вы играете?</p>
+      <div class='pick-up__counter'>Выбрано: <span id='counter-number'>0</span></div>
+
+      <section class='pick-up__slider-wrapper'>
+        <div class='swiper pick-up__slider'>
+          <div class='swiper-wrapper'>
+            <div class='swiper-slide pick-up__game _contain-img'>
+              <img src="img/cyberpunk.png" loading='lazy' alt='gameName'>
+            </div>
+            <div class='swiper-slide pick-up__game _contain-img'>
+              <img src="img/cyberpunk.png" loading='lazy' alt='gameName'>
+            </div>
+            <div class='swiper-slide pick-up__game _contain-img'>
+              <img src="img/cyberpunk.png" loading='lazy' alt='gameName'>
+            </div>
+            <div class='swiper-slide pick-up__game _contain-img'>
+              <img src="img/cyberpunk.png" loading='lazy' alt='gameName'>
+            </div>
+            <div class='swiper-slide pick-up__game _contain-img'>
+              <img src="img/cyberpunk.png" loading='lazy' alt='gameName'>
+            </div>
+            <div class='swiper-slide pick-up__game _contain-img'>
+              <img src="img/cyberpunk.png" loading='lazy' alt='gameName'>
+            </div>
+            <div class='swiper-slide pick-up__game _contain-img'>
+              <img src="img/cyberpunk.png" loading='lazy' alt='gameName'>
+            </div>
+            <div class='swiper-slide pick-up__game _contain-img'>
+              <img src="img/cyberpunk.png" loading='lazy' alt='gameName'>
+            </div>
+            <div class='swiper-slide pick-up__game _contain-img'>
+              <img src="img/cyberpunk.png" loading='lazy' alt='gameName'>
+            </div>
+            <div class='swiper-slide pick-up__game _contain-img'>
+              <img src="img/cyberpunk.png" loading='lazy' alt='gameName'>
+            </div>
+            <div class='swiper-slide pick-up__game _contain-img'>
+              <img src="img/cyberpunk.png" loading='lazy' alt='gameName'>
+            </div>
+            <div class='swiper-slide pick-up__game _contain-img'>
+              <img src="img/keyboard.png" loading='lazy' alt='gameName'>
+            </div>
+          </div>
+        </div>
+
+        <button type='button' class='pick-up__button-next'>
+          <svg width="82" height="119" viewBox="0 0 82 119" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="82" height="119" rx="7" fill="black" />
+            <path d="M9 17C9 13.134 12.134 10 16 10H65C68.866 10 72 13.134 72 17V100C72 103.866 68.866 107 65 107H16C12.134 107 9 103.866 9 100V17Z" fill="#7ED23C" />
+            <g clip-path="url(#clip0_0_1)">
+              <path d="M40 39C45.5695 39 50.911 41.2125 54.8492 45.1508C58.7875 49.089 61 54.4305 61 60C61 65.5695 58.7875 70.911 54.8492 74.8492C50.911 78.7875 45.5695 81 40 81C34.4305 81 29.089 78.7875 25.1508 74.8492C21.2125 70.911 19 65.5695 19 60C19 54.4305 21.2125 49.089 25.1508 45.1508C29.089 41.2125 34.4305 39 40 39V39ZM30.8125 58.6875C30.4644 58.6875 30.1306 58.8258 29.8844 59.0719C29.6383 59.3181 29.5 59.6519 29.5 60C29.5 60.3481 29.6383 60.6819 29.8844 60.9281C30.1306 61.1742 30.4644 61.3125 30.8125 61.3125H46.0191L40.3832 66.9457C40.2612 67.0678 40.1644 67.2127 40.0984 67.3721C40.0323 67.5315 39.9983 67.7024 39.9983 67.875C39.9983 68.0476 40.0323 68.2185 40.0984 68.3779C40.1644 68.5373 40.2612 68.6822 40.3832 68.8043C40.5053 68.9263 40.6502 69.0231 40.8096 69.0891C40.969 69.1552 41.1399 69.1892 41.3125 69.1892C41.4851 69.1892 41.656 69.1552 41.8154 69.0891C41.9748 69.0231 42.1197 68.9263 42.2418 68.8043L50.1168 60.9293C50.239 60.8073 50.336 60.6625 50.4021 60.503C50.4683 60.3436 50.5023 60.1726 50.5023 60C50.5023 59.8274 50.4683 59.6564 50.4021 59.497C50.336 59.3375 50.239 59.1927 50.1168 59.0707L42.2418 51.1957C42.1197 51.0737 41.9748 50.9769 41.8154 50.9109C41.656 50.8448 41.4851 50.8108 41.3125 50.8108C41.1399 50.8108 40.969 50.8448 40.8096 50.9109C40.6502 50.9769 40.5053 51.0737 40.3832 51.1957C40.2612 51.3178 40.1644 51.4627 40.0984 51.6221C40.0323 51.7815 39.9983 51.9524 39.9983 52.125C39.9983 52.2976 40.0323 52.4685 40.0984 52.6279C40.1644 52.7873 40.2612 52.9322 40.3832 53.0543L46.0191 58.6875H30.8125Z" fill="black" />
+            </g>
+            <defs>
+              <clipPath id="clip0_0_1">
+                <rect width="42" height="42" fill="white" transform="translate(19 39)" />
+              </clipPath>
+            </defs>
+          </svg>
+        </button>
+      </section>
+
+      <div class='swiper-pagination slider__pagination pick-up__pagination'></div>
+    </div>
+
+    <svg id='pick-up-top-left-decor' class='page-decor' width="561" height="583" viewBox="0 0 561 583" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g filter="url(#filter0_f_116_7)">
+        <path d="M114.767 110.011C115.053 102.783 122.682 98.2402 129.173 101.433L454.472 261.441C461.592 264.944 461.992 274.947 455.174 279.006L115.54 481.237C108.722 485.296 100.118 480.178 100.432 472.249L114.767 110.011Z" fill="#7ED23C" />
+      </g>
+      <defs>
+        <filter id="filter0_f_116_7" x="0.42334" y="0.39502" width="559.635" height="582.267" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+          <feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_116_7" />
+        </filter>
+      </defs>
+    </svg>
+    <svg id='pick-up-bottom-right-decor' class='page-decor' width="561" height="583" viewBox="0 0 561 583" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g filter="url(#filter0_f_116_8)">
+        <path d="M114.767 110.011C115.053 102.783 122.682 98.2402 129.173 101.433L454.472 261.441C461.592 264.944 461.992 274.947 455.174 279.006L115.54 481.237C108.722 485.296 100.118 480.178 100.432 472.249L114.767 110.011Z" fill="#7ED23C" />
+      </g>
+      <defs>
+        <filter id="filter0_f_116_8" x="0.42334" y="0.39502" width="559.635" height="582.267" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+          <feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_116_8" />
+        </filter>
+      </defs>
+    </svg>
+  </section>
+
+  <section class='shop-menu _decor-block'>
+    <div class='shop-menu__body _container _block-padding'>
+      <aside id='shop-menu-sidebar' class="sidebar shop-menu__sidebar">
+        <div class='spoiler shop-menu__spoiler-wrapper'>
+          <button type='button' class='spoiler__btn shop-menu__spoiler-button'>
+            <span>Видеокарты</span>
+
+            <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="0.806885" width="21.8641" height="22" rx="4" fill="black" />
+              <path d="M6.76987 7L11.739 12L16.7081 7L18.6957 8L11.739 15L4.78223 8L6.76987 7Z" fill="#7ED23C" />
+            </svg>
+          </button>
+
+          <div class='spoiler__content shop-menu__spoiler-content'>
+            <button class='shop-menu__option shop-menu__option-active' type='button'>Пример 1</button>
+            <button class='shop-menu__option' type='button'>Пример 2</button>
+          </div>
+        </div>
+        <div class='spoiler shop-menu__spoiler-wrapper'>
+          <button type='button' class='spoiler__btn shop-menu__spoiler-button'>
+            <span>Видеокарты бла бла бла</span>
+
+            <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="0.806885" width="21.8641" height="22" rx="4" fill="black" />
+              <path d="M6.76987 7L11.739 12L16.7081 7L18.6957 8L11.739 15L4.78223 8L6.76987 7Z" fill="#7ED23C" />
+            </svg>
+          </button>
+
+          <div class='spoiler__content shop-menu__spoiler-content'>
+            <button class='shop-menu__option' type='button'>Пример 1</button>
+            <button class='shop-menu__option' type='button'>Пример 2</button>
+          </div>
+        </div>
+      </aside>
+
+      <section class="shop-menu__main">
+        <%- include('components/_menuProductCart.htm', {}) %>
+        <%- include('components/_menuProductCart.htm', {}) %>
+        <%- include('components/_menuProductCart.htm', {}) %>
+        <%- include('components/_menuProductCart.htm', {}) %>
+        <%- include('components/_menuProductCart.htm', {}) %>
+        <%- include('components/_menuProductCart.htm', {}) %>
+        <%- include('components/_menuProductCart.htm', {}) %>
+        <%- include('components/_menuProductCart.htm', {}) %>
+      </section>
+    </div>
+
+    <svg id='shop-menu-center-decor' class='page-decor' width="581" height="568" viewBox="0 0 581 568" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g filter="url(#filter0_f_116_10)">
+        <path d="M469.021 100.29C476.197 99.378 481.937 106.152 479.86 113.081L375.77 460.338C373.491 467.939 363.691 469.985 358.561 463.931L103.02 162.357C97.8902 156.302 101.517 146.972 109.389 145.972L469.021 100.29Z" fill="#7ED23C" />
+      </g>
+      <defs>
+        <filter id="filter0_f_116_10" x="0.637695" y="0.206787" width="579.653" height="567.264" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+          <feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_116_10" />
+        </filter>
+      </defs>
+    </svg>
+  </section>
+
+  <section class='accessories _decor-block'>
+    <div class='accessories__body _container _block-padding'>
+      <h2 tabindex='0' class='accessories__title _title-margin-bottom'>Аксессуары</h2>
+
+      <div class="accessories__grid">
+        <a href='#' id='top-left-block' class='category category_green-bg'>
+          <div class="category__preview _contain-img">
+            <img src='img/mouse.png' alt='category mouses'>
+          </div>
+
+          <h3 tabindex='0' class='category__title'>Мыши</h3>
+        </a>
+        <a href='#' id='bottom-left-block' class='category category_green-bg'>
+          <div class="category__preview _contain-img">
+            <img src='img/keyboard.png' alt='category keyboards'>
+          </div>
+
+          <h3 tabindex='0' class='category__title'>Клавиатуры</h3>
+        </a>
+        <a href='#' id='big-block' class='category category_big-card _element-with-accent-point'>
+          <h3 tabindex='0' class='category__title'>Наушники</h3>
+
+          <div class="category__preview _contain-img">
+            <img src='img/headphones-card.png' alt='category keyboards'>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <svg id='accessories-top-right-decor' class='page-decor' width="581" height="568" viewBox="0 0 581 568" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g filter="url(#filter0_f_116_6)">
+        <path d="M469.021 100.29C476.197 99.378 481.937 106.152 479.86 113.081L375.77 460.338C373.491 467.939 363.691 469.985 358.561 463.931L103.02 162.357C97.8902 156.302 101.517 146.972 109.389 145.972L469.021 100.29Z" fill="#7ED23C" />
+      </g>
+      <defs>
+        <filter id="filter0_f_116_6" x="0.637695" y="0.206787" width="579.653" height="567.264" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+          <feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_116_6" />
+        </filter>
+      </defs>
+    </svg>
+  </section>
+
+  <section class='headphones _decor-block'>
+    <div class='headphones__body _container _block-padding'>
+      <h2 tabindex='0' class='headphones__title'>Наушники</h2>
+
+      <div class="headphones__products">
+        <%- include('components/_productCardMini.htm', {cssClasses: ''}) %>
+        <%- include('components/_productCardMini.htm', {cssClasses: ''}) %>
+        <%- include('components/_productCardMini.htm', {cssClasses: ''}) %>
+        <%- include('components/_productCardMini.htm', {cssClasses: ''}) %>
+        <%- include('components/_productCardMini.htm', {cssClasses: ''}) %>
+        <%- include('components/_productCardMini.htm', {cssClasses: ''}) %>
+        <%- include('components/_productCardMini.htm', {cssClasses: ''}) %>
+        <%- include('components/_productCardMini.htm', {cssClasses: ''}) %>
+        <%- include('components/_productCardMini.htm', {cssClasses: 'product-card-mini_hidden'}) %>
+        <%- include('components/_productCardMini.htm', {cssClasses: 'product-card-mini_hidden'}) %>
+        <%- include('components/_productCardMini.htm', {cssClasses: 'product-card-mini_hidden'}) %>
+      </div>
+
+      <button type='button' class='spoiler__btn headphones__show-more-btn'>
+        <span>Показать ещё</span>
+
+        <svg width="1em" viewBox="0 0 32 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4.57143 0L16 10.625L27.4286 0L32 2.125L16 17L0 2.125L4.57143 0Z" fill="#7ED23C" />
+        </svg>
+      </button>
+    </div>
+
+    <svg id='headphones-center-decor' class='page-decor' width="581" height="568" viewBox="0 0 581 568" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g filter="url(#filter0_f_116_12)">
+        <path d="M469.021 100.29C476.197 99.378 481.937 106.152 479.86 113.081L375.77 460.338C373.491 467.939 363.691 469.985 358.561 463.931L103.02 162.357C97.8902 156.302 101.517 146.972 109.389 145.972L469.021 100.29Z" fill="#7ED23C" />
+      </g>
+      <defs>
+        <filter id="filter0_f_116_12" x="0.637695" y="0.206909" width="579.653" height="567.264" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+          <feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_116_12" />
+        </filter>
+      </defs>
+    </svg>
+    <svg id='headphones-bottom-right-decor' class='page-decor' width="334" height="568" viewBox="0 0 334 568" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g filter="url(#filter0_f_116_13)">
+        <path d="M469.021 100.29C476.197 99.378 481.937 106.152 479.86 113.081L375.77 460.338C373.491 467.939 363.691 469.985 358.561 463.931L103.02 162.357C97.8902 156.302 101.517 146.972 109.389 145.972L469.021 100.29Z" fill="#7ED23C" />
+      </g>
+      <defs>
+        <filter id="filter0_f_116_13" x="0.637695" y="0.206848" width="579.653" height="567.264" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+          <feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_116_13" />
+        </filter>
+      </defs>
+    </svg>
+  </section>
+
+  <section class='our-partners _decor-block'>
+    <div class='our-partners__body _container _block-padding'>
+      <h2 tabindex='0' class='our-partners__title'>Наши партеры</h2>
+
+      <div class="our-partners__slider-block">
+        <div class='swiper our-partners__slider'>
+          <div class='swiper-wrapper'>
+            <div class='swiper-slide our-partners__slide _contain-img'>
+              <img src='img/partner-1.png' alt='alt'>
+            </div>
+            <div class='swiper-slide our-partners__slide _contain-img'>
+              <img src='img/partner-2.png' alt='alt'>
+            </div>
+            <div class='swiper-slide our-partners__slide _contain-img'>
+              <img src='img/partner-1.png' alt='alt'>
+            </div>
+            <div class='swiper-slide our-partners__slide _contain-img'>
+              <img src='img/partner-2.png' alt='alt'>
+            </div>
+            <div class='swiper-slide our-partners__slide _contain-img'>
+              <img src='img/partner-2.png' alt='alt'>
+            </div>
+            <div class='swiper-slide our-partners__slide _contain-img'>
+              <img src='img/partner-2.png' alt='alt'>
+            </div>
+            <div class='swiper-slide our-partners__slide _contain-img'>
+              <img src='img/partner-2.png' alt='alt'>
+            </div>
+          </div>
+        </div>
+
+        <button type='button' class='our-partners__next-btn'>
+          <svg width="83" height="82" viewBox="0 0 83 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M25.2024 61.6283L45.7959 41.3771L25.2024 21.1259L29.3211 13.0255L58.152 41.3771L29.3211 69.7288L25.2024 61.6283Z" fill="#7ED23C" />
+            <path d="M58.259 41.3771L29.3746 12.9729L25.0955 21.3889L45.4215 41.3771L25.0955 61.8913C26.3436 64.5213 28.9467 69.7814 29.3746 69.7814C29.8025 69.7814 48.8092 50.8452 58.259 41.3771Z" stroke="black" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <svg id='our-partners-left-decor' class='page-decor' width="557" height="568" viewBox="0 0 557 568" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g filter="url(#filter0_f_116_14)">
+        <path d="M445.021 100.29C452.197 99.378 457.937 106.152 455.86 113.081L351.77 460.338C349.491 467.939 339.691 469.985 334.561 463.931L79.0202 162.357C73.8902 156.302 77.5173 146.972 85.3894 145.972L445.021 100.29Z" fill="#7ED23C" />
+      </g>
+      <defs>
+        <filter id="filter0_f_116_14" x="-23.3623" y="0.206848" width="579.653" height="567.264" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+          <feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_116_14" />
+        </filter>
+      </defs>
+    </svg>
+  </section>
+
+  <section class='product-overview _decor-block'>
+    <div class='product-overview__body _container _block-padding'>
+      <h2 tabindex='0' class='product-overview__title _title-right'>Обзор на товар</h2>
+
+      <aside class="product-overview__socials">
+        <a class='product-overview__social-img' href='#' target='_blank' rel='noopener noreferrer'>
+          <img src="img/icons/twitter.png" loading='lazy' alt='twitter' width=91 height=91>
+        </a>
+        <a id='fb-social-icon' class='product-overview__social-img' href='#' target='_blank' rel='noopener noreferrer'>
+          <img class='product-overview__social-img' src="img/icons/fb.png" loading='lazy' alt='twitter' width=91 height=91>
+        </a>
+        <a class='product-overview__social-img' href='#' target='_blank' rel='noopener noreferrer'>
+          <img src="img/icons/inst.png" loading='lazy' alt='twitter' width=91 height=91>
+        </a>
+        <a id='youtube-social-icon' class='product-overview__social-img' href='#' target='_blank' rel='noopener noreferrer'>
+          <img src="img/icons/youtube.png" loading='lazy' alt='twitter' width=91 height=91>
+        </a>
+        <a class='product-overview__social-img' href='#' target='_blank' rel='noopener noreferrer'>
+          <img src="img/icons/pin.png" loading='lazy' alt='twitter' width=91 height=91>
+        </a>
+      </aside>
+
+      <div class="product-overview__video">
+        <iframe width="641" height="361" src="https://www.youtube.com/embed/xme-UQGJxJg" title="The Battle Continues! (TNO Remix) - Ayden George" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading='lazy'></iframe>
+      </div>
+    </div>
+
+    <svg id='product-overview-center-decor' class='page-decor' width="481" height="468" viewBox="0 0 481 468" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g filter="url(#filter0_f_116_15)">
+        <path d="M419.021 50.2896C426.197 49.378 431.937 56.152 429.86 63.0812L325.77 410.338C323.491 417.939 313.691 419.985 308.561 413.931L53.0202 112.357C47.8902 106.302 51.5173 96.9716 59.3894 95.9716L419.021 50.2896Z" fill="#7ED23C" />
+      </g>
+      <defs>
+        <filter id="filter0_f_116_15" x="0.637695" y="0.206848" width="479.653" height="467.264" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+          <feGaussianBlur stdDeviation="25" result="effect1_foregroundBlur_116_15" />
+        </filter>
+      </defs>
+    </svg>
+
+  </section>
+
+  <section class='our-branches _decor-block'>
+    <div class='our-branches__body _container _block-padding'>
+      <h2 tabindex='0' class='our-branches__title'>Наши филиалы</h2>
+      <p class="our-branches__location-name">Москва, Милютинский переулок, 13 строение 1</p>
+
+      <iframe class='our-branches__map' src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae68a985695eb75c5d2f0798b3eddc39f9fc78e523248b5014a1186fc5bf853ad&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+    </div>
+
+    <svg id='our-branches-left-decor' class='page-decor' width="581" height="568" viewBox="0 0 581 568" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g filter="url(#filter0_f_116_16)">
+        <path d="M469.021 100.29C476.197 99.378 481.937 106.152 479.86 113.081L375.77 460.338C373.491 467.939 363.691 469.985 358.561 463.931L103.02 162.357C97.8902 156.302 101.517 146.972 109.389 145.972L469.021 100.29Z" fill="#7ED23C" />
+      </g>
+      <defs>
+        <filter id="filter0_f_116_16" x="0.637695" y="0.206909" width="579.653" height="567.264" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+          <feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_116_16" />
+        </filter>
+      </defs>
+    </svg>
+
+  </section>
+
+  <%- include('components/_modals.htm', {}) %>
+
+  <%- include('_footer.htm') %>
+</body>
+
+</html>
+<!-- Made in Russia, with ❤, by Ivan Ulyanov. -->

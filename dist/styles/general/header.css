@@ -1,0 +1,107 @@
+.header {
+  position: relative;
+  padding: 15px 0;
+}
+.header__body {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: max(30px, min(10vw, 120px));
+}
+@media (max-width: 768px) {
+  .header__body {
+    justify-content: space-between;
+  }
+}
+.navmenu__body {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.navmenu__body li a,
+.navmenu__body li button {
+  display: flex;
+  flex-flow: column-reverse nowrap;
+  padding: 8px;
+  color: inherit;
+  transition: all 0.2s ease 0s;
+}
+.navmenu__body li a,
+.navmenu__body li button {
+  border-radius: 7px;
+  border: 0.25em solid rgba(0,0,0,0);
+}
+.navmenu__body li a:before,
+.navmenu__body li button:before {
+  background: #000;
+  opacity: 0;
+  height: 1.4px;
+  width: 100%;
+  transition: opacity 0.2s ease;
+  content: '';
+}
+.navmenu__body li a.active,
+.navmenu__body li button.active,
+.navmenu__body li a:hover,
+.navmenu__body li button:hover,
+.navmenu__body li a:focus,
+.navmenu__body li button:focus {
+  color: #000;
+  background: var(--accent-c);
+  border-color: #000;
+}
+.navmenu__body li a.active:before,
+.navmenu__body li button.active:before,
+.navmenu__body li a:hover:before,
+.navmenu__body li button:hover:before,
+.navmenu__body li a:focus:before,
+.navmenu__body li button:focus:before {
+  opacity: 0.33;
+}
+.navmenu__body li .button-with-icon {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.logo {
+  z-index: 10;
+}
+.current-money {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  white-space: nowrap;
+}
+#cart-button,
+#favs-button {
+  align-items: center;
+}
+#cart-button:after,
+#favs-button:after {
+  min-width: 1.5em;
+  min-height: 1.5em;
+  margin-left: 3px;
+  transition: all 0.2s ease;
+  content: '';
+}
+#cart-button.active:after,
+#favs-button.active:after,
+#cart-button:hover:after,
+#favs-button:hover:after,
+#cart-button:focus:after,
+#favs-button:focus:after {
+  filter: brightness(0.1);
+}
+#favs-button:after {
+  background: url("../../img/icons/favs.svg") no-repeat center/contain;
+  background-image: -webkit-image-set(url("../../img/icons/favs.svg") 1x, url("../../img/icons/favs.svg") 1x, url("../../img/icons/favs.svg") 1x);
+  background-image: image-set(url("../../img/icons/favs.svg") 1x, url("../../img/icons/favs.svg") 1x, url("../../img/icons/favs.svg") 1x);
+}
+#cart-button:after {
+  background: url("../../img/icons/cart.svg") no-repeat center/contain;
+  background-image: -webkit-image-set(url("../../img/icons/cart.svg") 1x, url("../../img/icons/cart.svg") 1x, url("../../img/icons/cart.svg") 1x);
+  background-image: image-set(url("../../img/icons/cart.svg") 1x, url("../../img/icons/cart.svg") 1x, url("../../img/icons/cart.svg") 1x);
+}

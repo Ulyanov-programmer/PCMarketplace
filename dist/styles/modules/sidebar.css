@@ -1,0 +1,56 @@
+.sidebar {
+  z-index: 3;
+  transition: all 0.2s ease;
+}
+@media (max-width: 1024px) {
+  .sidebar {
+    --sidabarWidth: 50vw;
+    position: absolute;
+    top: 0;
+    right: 100vw;
+    width: var(--sidabarWidth);
+    height: 100%;
+    background: #000;
+  }
+  .sidebar.active {
+    right: var(--sidabarWidth);
+  }
+}
+.sidebar__body {
+  overflow: auto;
+}
+.sidebar__toggle-btn {
+  z-index: 5;
+  position: absolute;
+  top: 0;
+  right: auto;
+  bottom: auto;
+  left: 100%;
+}
+#shop-menu-swipe-area {
+  display: none;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  right: auto;
+  bottom: auto;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  height: 100vh;
+  width: 20vw;
+}
+#shop-menu-swipe-area:hover {
+  cursor: grab;
+}
+#shop-menu-swipe-area:active {
+  cursor: grabbing;
+}
+@media (min-width: 1024px) {
+  #shop-menu-swipe-area {
+    display: none;
+  }
+}
+#shop-menu-swipe-area.active {
+  width: 100vw;
+}

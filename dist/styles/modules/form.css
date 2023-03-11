@@ -1,0 +1,91 @@
+:root {
+  --formInputBg: #666;
+}
+form {
+  font-size: max(20px, min(1.56vw, 30px));
+}
+fieldset {
+  display: grid;
+  grid-gap: 15px;
+  gap: 15px;
+}
+label {
+  cursor: pointer;
+}
+input {
+  padding: 10px 5px;
+  background: #666;
+  background: var(--formInputBg);
+  color: #fff;
+}
+input::-moz-placeholder {
+  color: #fff;
+}
+input::placeholder {
+  color: #fff;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+          appearance: none;
+  margin: 0;
+}
+input[type=radio],
+input[type=checkbox] {
+  display: none;
+}
+input[type=file] {
+  display: none;
+}
+select {
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: #fff;
+}
+textarea {
+  background: #666;
+  background: var(--formInputBg);
+  scrollbar-width: 0;
+  resize: none;
+  color: #fff;
+  padding: 10px 5px;
+}
+textarea::-webkit-scrollbar {
+  width: 0;
+  outline: none;
+}
+textarea::-moz-placeholder {
+  color: #fff;
+}
+textarea::placeholder {
+  color: #fff;
+}
+input[type=password] {
+  font-family: caption;
+}
+input[type=date]::-webkit-datetime-edit {
+/* all input, but not calendar button */
+  background: #adff2f;
+}
+input[type=date]::-webkit-datetime-edit-fields-wrapper {
+/* only date values */
+  background: #ff0;
+}
+input[type=date]::-webkit-datetime-edit-text {
+/* elements between numbers */
+  background: #808080;
+}
+input[type=date]::-webkit-inner-spin-button {
+  display: none;
+}
+input[type=date]::-webkit-calendar-picker-indicator {
+/* calendar button */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
