@@ -270,18 +270,7 @@ h2 {
   color: #7ed23c;
   color: var(--accent-c);
   border-radius: 7px;
-}
-.cart__by-installments-btn:after {
-  z-index: -1;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate3d(-50%, -50%, 0);
-  width: calc(100% + 11px);
-  height: calc(100% + 11px);
-  border-radius: 7px;
-  background: #b9c3b2;
-  content: '';
+  box-shadow: 0px 0px 0px 5px #b9c3b2;
 }
 .cart-item {
   display: grid;
@@ -400,18 +389,7 @@ h2 {
   font-size: max(16px, min(1.56vw, 30px));
   padding: max(10px, min(1.3vw, 25px)) max(20px, min(3.18vw, 61px));
   border-radius: 7px;
-}
-.modal-button:after {
-  z-index: -1;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate3d(-50%, -50%, 0);
-  width: calc(100% + 11px);
-  height: calc(100% + 11px);
-  border-radius: 7px;
-  background: #000;
-  content: '';
+  box-shadow: 0px 0px 0px 5px #000;
 }
 #cart-top-left-decor {
   top: 0;

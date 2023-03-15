@@ -278,19 +278,7 @@ h2 {
     background #666666;
     color var(--accent-c);
     border-radius 7px;
-
-    &:after {
-      z-index -1;
-      position absolute;
-      top 50%;
-      left 50%;
-      transform translate3d(-50%, -50%, 0);
-      width calc(100% + 11px);
-      height calc(100% + 11px);
-      border-radius 7px;
-      background #B9C3B2;
-      content '';
-    }
+    box-shadow 0px 0px 0px 5px #B9C3B2
   }
 
   &__make-order-btn {
@@ -422,19 +410,8 @@ h2 {
   font-size clamp(16px, pxToVw(30), 30px);
   padding clamp(10px, pxToVw(25), 25px) clamp(20px, pxToVw(61), 61px);
   border-radius 7px;
-
-  &:after {
-    z-index -1;
-    position absolute;
-    top 50%;
-    left 50%;
-    transform translate3d(-50%, -50%, 0);
-    width calc(100% + 11px);
-    height calc(100% + 11px);
-    border-radius 7px;
-    background #000;
-    content '';
-  }
+  
+  box-shadow 0px 0px 0px 5px #000
 }
 
 #cart-top-left-decor {
